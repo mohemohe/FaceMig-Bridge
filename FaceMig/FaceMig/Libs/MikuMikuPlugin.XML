@@ -1,0 +1,2891 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>MikuMikuPlugin</name>
+    </assembly>
+    <members>
+        <member name="T:MikuMikuPlugin.ScreenObject">
+            <summary>
+            スクリーンオブジェクト
+            </summary>
+        </member>
+        <member name="M:MikuMikuPlugin.ScreenObject.Dispose">
+            <summary>
+            Dispose
+            </summary>
+        </member>
+        <member name="M:MikuMikuPlugin.ScreenObject.OnMouseDown(System.Windows.Forms.MouseEventArgs)">
+            <summary>
+            OnMouseDown
+            </summary>
+        </member>
+        <member name="M:MikuMikuPlugin.ScreenObject.OnMouseUp(System.Windows.Forms.MouseEventArgs)">
+            <summary>
+            OnMouseUp
+            </summary>
+        </member>
+        <member name="M:MikuMikuPlugin.ScreenObject.OnMouseEnter(System.Windows.Forms.MouseEventArgs)">
+            <summary>
+            OnMouseEnter
+            </summary>
+        </member>
+        <member name="M:MikuMikuPlugin.ScreenObject.OnMouseLeave(System.Windows.Forms.MouseEventArgs)">
+            <summary>
+            OnMouseLeave
+            </summary>
+        </member>
+        <member name="M:MikuMikuPlugin.ScreenObject.OnMouseMove(System.Windows.Forms.MouseEventArgs)">
+            <summary>
+            OnMouseMove
+            </summary>
+        </member>
+        <member name="E:MikuMikuPlugin.ScreenObject.MouseDown">
+            <summary>MouseDown</summary>
+        </member>
+        <member name="E:MikuMikuPlugin.ScreenObject.MouseUp">
+            <summary>MouseUp</summary>
+        </member>
+        <member name="E:MikuMikuPlugin.ScreenObject.MouseEnter">
+            <summary>MouseEnter</summary>
+        </member>
+        <member name="E:MikuMikuPlugin.ScreenObject.MouseLeave">
+            <summary>MouseLeave</summary>
+        </member>
+        <member name="E:MikuMikuPlugin.ScreenObject.MouseMove">
+            <summary>MouseMove</summary>
+        </member>
+        <member name="T:MikuMikuPlugin.ScreenImage_2D">
+            <summary>
+            2次元画像
+            </summary>
+        </member>
+        <member name="F:MikuMikuPlugin.ScreenImage_2D.image">
+            <summary>画像</summary>
+        </member>
+        <member name="M:MikuMikuPlugin.ScreenImage_2D.Contains(System.Drawing.Point)">
+            <summary>
+            内部判定
+            </summary>
+            <param name="point">位置</param>
+            <returns></returns>
+        </member>
+        <member name="M:MikuMikuPlugin.ScreenImage_2D.#ctor">
+            <summary>
+            コンストラクタ
+            </summary>
+        </member>
+        <member name="M:MikuMikuPlugin.ScreenImage_2D.#ctor(System.Drawing.Point,System.Drawing.Bitmap)">
+            <summary>
+            コンストラクタ
+            </summary>
+        </member>
+        <member name="M:MikuMikuPlugin.ScreenImage_2D.#ctor(System.Drawing.Point,System.IO.Stream)">
+            <summary>
+            コンストラクタ
+            </summary>
+        </member>
+        <member name="M:MikuMikuPlugin.ScreenImage_2D.#ctor(System.Drawing.Point,System.String)">
+            <summary>
+            コンストラクタ
+            </summary>
+        </member>
+        <member name="M:MikuMikuPlugin.ScreenImage_2D.OnChangeImage">
+            <summary>
+            OnChangeImage
+            </summary>
+        </member>
+        <member name="M:MikuMikuPlugin.ScreenImage_2D.Dispose">
+            <summary>
+            Dispose
+            </summary>
+        </member>
+        <member name="E:MikuMikuPlugin.ScreenImage_2D.ChangeImage">
+            <summary>画像変更イベント</summary>
+        </member>
+        <member name="P:MikuMikuPlugin.ScreenImage_2D.Position">
+            <summary>
+            スクリーン位置
+            </summary>
+        </member>
+        <member name="P:MikuMikuPlugin.ScreenImage_2D.Transform">
+            <summary>
+            座標変換Matrix
+            </summary>
+        </member>
+        <member name="P:MikuMikuPlugin.ScreenImage_2D.Size">
+            <summary>
+            サイズ
+            </summary>
+        </member>
+        <member name="P:MikuMikuPlugin.ScreenImage_2D.Visible">
+            <summary>
+            Visible
+            </summary>
+        </member>
+        <member name="P:MikuMikuPlugin.ScreenImage_2D.Image">
+            <summary>
+            表示する画像
+            </summary>
+        </member>
+        <member name="P:MikuMikuPlugin.ScreenImage_2D.Bounds">
+            <summary>
+            Bounds
+            </summary>
+        </member>
+        <member name="P:MikuMikuPlugin.ScreenImage_2D.Disposed">
+            <summary>
+            Dispose済みフラグ
+            </summary>
+        </member>
+        <member name="T:MikuMikuPlugin.ScreenImage_3D">
+            <summary>
+            3次元画像
+            </summary>
+        </member>
+        <member name="F:MikuMikuPlugin.ScreenImage_3D.image">
+            <summary>画像</summary>
+        </member>
+        <member name="F:MikuMikuPlugin.ScreenImage_3D.size">
+            <summary>サイズ</summary>
+        </member>
+        <member name="M:MikuMikuPlugin.ScreenImage_3D.#ctor">
+            <summary>
+            コンストラクタ
+            </summary>
+        </member>
+        <member name="M:MikuMikuPlugin.ScreenImage_3D.#ctor(DxMath.Vector3,System.Drawing.Bitmap)">
+            <summary>
+            コンストラクタ
+            </summary>
+        </member>
+        <member name="M:MikuMikuPlugin.ScreenImage_3D.#ctor(DxMath.Vector3,System.IO.Stream)">
+            <summary>
+            コンストラクタ
+            </summary>
+        </member>
+        <member name="M:MikuMikuPlugin.ScreenImage_3D.#ctor(DxMath.Vector3,System.String)">
+            <summary>
+            コンストラクタ
+            </summary>
+        </member>
+        <member name="M:MikuMikuPlugin.ScreenImage_3D.OnImageChanged">
+            <summary>
+            OnChangeImage
+            </summary>
+        </member>
+        <member name="M:MikuMikuPlugin.ScreenImage_3D.OnSizeChanged">
+            <summary>
+            OnSizeChanged
+            </summary>
+        </member>
+        <member name="M:MikuMikuPlugin.ScreenImage_3D.Dispose">
+            <summary>
+            Dispose
+            </summary>
+        </member>
+        <member name="E:MikuMikuPlugin.ScreenImage_3D.ImageChanged">
+            <summary>画像変更イベント</summary>
+        </member>
+        <member name="E:MikuMikuPlugin.ScreenImage_3D.SizeChanged">
+            <summary>サイズ変更イベント</summary>
+        </member>
+        <member name="P:MikuMikuPlugin.ScreenImage_3D.Position">
+            <summary>
+            位置
+            </summary>
+        </member>
+        <member name="P:MikuMikuPlugin.ScreenImage_3D.Rotation">
+            <summary>
+            回転
+            </summary>
+        </member>
+        <member name="P:MikuMikuPlugin.ScreenImage_3D.Size">
+            <summary>
+            サイズ
+            </summary>
+        </member>
+        <member name="P:MikuMikuPlugin.ScreenImage_3D.ImageSize">
+            <summary>
+            画像サイズ
+            </summary>
+        </member>
+        <member name="P:MikuMikuPlugin.ScreenImage_3D.Visible">
+            <summary>
+            Visible
+            </summary>
+        </member>
+        <member name="P:MikuMikuPlugin.ScreenImage_3D.Image">
+            <summary>
+            表示する画像
+            </summary>
+        </member>
+        <member name="P:MikuMikuPlugin.ScreenImage_3D.Disposed">
+            <summary>
+            Dispose済みフラグ
+            </summary>
+        </member>
+        <member name="T:MikuMikuPlugin.BoneCollection">
+            <summary>
+            ボーンコレクション
+            </summary>
+        </member>
+        <member name="M:MikuMikuPlugin.BoneCollection.GetEnumerator">
+            <summary>
+            Enumerator
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="P:MikuMikuPlugin.BoneCollection.Count">
+            <summary>
+            ボーン数
+            </summary>
+        </member>
+        <member name="P:MikuMikuPlugin.BoneCollection.RootBone">
+            <summary>
+            ルートボーン
+            </summary>
+        </member>
+        <member name="P:MikuMikuPlugin.BoneCollection.Item(System.Int32)">
+            <summary>
+            ボーン
+            </summary>
+            <param name="index">インデックス</param>
+            <returns></returns>
+        </member>
+        <member name="P:MikuMikuPlugin.BoneCollection.Item(System.String)">
+            <summary>
+            ボーン
+            </summary>
+            <param name="name">ボーン名</param>
+            <returns></returns>
+        </member>
+        <member name="T:MikuMikuPlugin.Bone">
+            <summary>
+            ボーン
+            </summary>
+        </member>
+        <member name="M:MikuMikuPlugin.Bone.AddLayer(System.String)">
+            <summary>
+            モーションレイヤを追加する
+            </summary>
+            <param name="name">表示名</param>
+            <returns></returns>
+        </member>
+        <member name="M:MikuMikuPlugin.Bone.RemoveLayer(MikuMikuPlugin.MotionLayer)">
+            <summary>
+            モーションレイヤを削除する
+            </summary>
+            <param name="layer">対象モーションレイヤ</param>
+        </member>
+        <member name="M:MikuMikuPlugin.Bone.RemoveLayer(System.Int32)">
+            <summary>
+            モーションレイヤを削除する
+            </summary>
+            <param name="layerID">対象モーションレイヤID</param>
+        </member>
+        <member name="P:MikuMikuPlugin.Bone.Axis">
+            <summary>
+            ローカル軸
+            </summary>
+        </member>
+        <member name="P:MikuMikuPlugin.Bone.BoneFlags">
+            <summary>
+            ボーンフラグ
+            </summary>
+        </member>
+        <member name="P:MikuMikuPlugin.Bone.BoneID">
+            <summary>
+            ボーンID
+            </summary>
+        </member>
+        <member name="P:MikuMikuPlugin.Bone.CurrentLocalMotion">
+            <summary>
+            現在のモーション
+            </summary>
+        </member>
+        <member name="P:MikuMikuPlugin.Bone.DisplayName">
+            <summary>
+            表示名
+            </summary>
+        </member>
+        <member name="P:MikuMikuPlugin.Bone.EnglishName">
+            <summary>
+            英語名
+            </summary>
+        </member>
+        <member name="P:MikuMikuPlugin.Bone.ExternalParentKey">
+            <summary>
+            外部親キー
+            </summary>
+        </member>
+        <member name="P:MikuMikuPlugin.Bone.InheraRate">
+            <summary>
+            付与率
+            </summary>
+        </member>
+        <member name="P:MikuMikuPlugin.Bone.InhereBoneID">
+            <summary>
+            付与ボーンID
+            </summary>
+        </member>
+        <member name="P:MikuMikuPlugin.Bone.InitialPosition">
+            <summary>
+            初期位置
+            </summary>
+        </member>
+        <member name="P:MikuMikuPlugin.Bone.Layers">
+            <summary>
+            モーションレイヤ
+            </summary>
+        </member>
+        <member name="P:MikuMikuPlugin.Bone.LinkBoneID">
+            <summary>
+            リンクボーンID
+            </summary>
+        </member>
+        <member name="P:MikuMikuPlugin.Bone.Name">
+            <summary>
+            名前
+            </summary>
+        </member>
+        <member name="P:MikuMikuPlugin.Bone.ParentBoneID">
+            <summary>
+            親ボーンID
+            </summary>
+        </member>
+        <member name="P:MikuMikuPlugin.Bone.SelectedLayers">
+            <summary>
+            選択中モーションレイヤ
+            </summary>
+        </member>
+        <member name="T:MikuMikuPlugin.Properties.Resources">
+            <summary>
+              ローカライズされた文字列などを検索するための、厳密に型指定されたリソース クラスです。
+            </summary>
+        </member>
+        <member name="P:MikuMikuPlugin.Properties.Resources.ResourceManager">
+            <summary>
+              このクラスで使用されているキャッシュされた ResourceManager インスタンスを返します。
+            </summary>
+        </member>
+        <member name="P:MikuMikuPlugin.Properties.Resources.Culture">
+            <summary>
+              厳密に型指定されたこのリソース クラスを使用して、すべての検索リソースに対し、
+              現在のスレッドの CurrentUICulture プロパティをオーバーライドします。
+            </summary>
+        </member>
+        <member name="P:MikuMikuPlugin.Properties.Resources.DefaultCaptionFont">
+            <summary>
+              Arial に類似しているローカライズされた文字列を検索します。
+            </summary>
+        </member>
+        <member name="T:MikuMikuPlugin.ModelPropertyFrameCollection">
+            <summary>
+            モデルプロパティフレームコレクション
+            </summary>
+        </member>
+        <member name="M:MikuMikuPlugin.ModelPropertyFrameCollection.AddKeyFrame(MikuMikuPlugin.ModelPropertyFrameData)">
+            <summary>
+            キーフレームを追加する
+            </summary>
+            <param name="fdata">プロパティフレーム</param>
+        </member>
+        <member name="M:MikuMikuPlugin.ModelPropertyFrameCollection.AddKeyFrame(System.Collections.Generic.List{MikuMikuPlugin.ModelPropertyFrameData})">
+            <summary>
+            複数のキーフレームを追加する
+            </summary>
+            <param name="framelist">フレームリスト</param>
+        </member>
+        <member name="M:MikuMikuPlugin.ModelPropertyFrameCollection.GetEnumerator">
+            <summary>
+            Enumerator
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:MikuMikuPlugin.ModelPropertyFrameCollection.GetFrame(System.Int64)">
+            <summary>
+            指定フレームのプロパティを取得する
+            </summary>
+            <param name="frameNumber"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MikuMikuPlugin.ModelPropertyFrameCollection.GetKeyFrames">
+            <summary>
+            すべてのキーフレームについてコピーを取得する
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:MikuMikuPlugin.ModelPropertyFrameCollection.GetSelectedKeyFrames">
+            <summary>
+            選択中のキーフレームについてコピーを取得する
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:MikuMikuPlugin.ModelPropertyFrameCollection.RemoveKeyFrame(System.Int64)">
+            <summary>
+            キーフレームを削除する
+            </summary>
+            <param name="frameNumber">フレーム番号</param>
+        </member>
+        <member name="M:MikuMikuPlugin.ModelPropertyFrameCollection.ReplaceAllKeyFrames(System.Collections.Generic.List{MikuMikuPlugin.ModelPropertyFrameData})">
+            <summary>
+            すべてのキーフレームを置き換える
+            </summary>
+            <param name="framelist">フレームリスト</param>
+        </member>
+        <member name="P:MikuMikuPlugin.ModelPropertyFrameCollection.Count">
+            <summary>
+            プロパティフレーム数
+            </summary>
+        </member>
+        <member name="P:MikuMikuPlugin.ModelPropertyFrameCollection.Item(System.Int32)">
+            <summary>
+            プロパティフレーム
+            </summary>
+            <param name="index">インデックス</param>
+            <returns></returns>
+        </member>
+        <member name="T:MikuMikuPlugin.SelectedModelPropertyFrameCollection">
+            <summary>
+            選択済みモデルプロパティフレームコレクション
+            </summary>
+        </member>
+        <member name="M:MikuMikuPlugin.SelectedModelPropertyFrameCollection.GetEnumerator">
+            <summary>
+            Enumerator
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:MikuMikuPlugin.CameraCollection">
+            <summary>
+            カメラコレクション
+            </summary>
+        </member>
+        <member name="M:MikuMikuPlugin.CameraCollection.GetEnumerator">
+            <summary>
+            Enumerator
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="P:MikuMikuPlugin.CameraCollection.Count">
+            <summary>
+            カメラ数
+            </summary>
+        </member>
+        <member name="P:MikuMikuPlugin.CameraCollection.Item(System.Int32)">
+            <summary>
+            カメラ
+            </summary>
+            <param name="index">インデックス</param>
+            <returns></returns>
+        </member>
+        <member name="T:MikuMikuPlugin.Camera">
+            <summary>
+            カメラ
+            </summary>
+        </member>
+        <member name="M:MikuMikuPlugin.Camera.AddLayer(System.String)">
+            <summary>
+            カメラレイヤを追加する
+            </summary>
+            <param name="name">表示名</param>
+            <returns></returns>
+        </member>
+        <member name="M:MikuMikuPlugin.Camera.RemoveLayer(MikuMikuPlugin.CameraLayer)">
+            <summary>
+            カメラレイヤを削除する
+            </summary>
+            <param name="layer">対象のカメラレイヤ</param>
+        </member>
+        <member name="M:MikuMikuPlugin.Camera.RemoveLayer(System.Int32)">
+            <summary>
+            カメラレイヤを削除する
+            </summary>
+            <param name="layerID">対象のカメラレイヤID</param>
+        </member>
+        <member name="P:MikuMikuPlugin.Camera.CurrentMotion">
+            <summary>
+            現在のカメラモーション
+            </summary>
+        </member>
+        <member name="P:MikuMikuPlugin.Camera.ProjectionMatrix">
+            <summary>
+            Projection行列
+            </summary>
+        </member>
+        <member name="P:MikuMikuPlugin.Camera.ViewMatrix">
+            <summary>
+            View行列
+            </summary>
+        </member>
+        <member name="P:MikuMikuPlugin.Camera.Layers">
+            <summary>
+            カメラレイヤ
+            </summary>
+        </member>
+        <member name="T:MikuMikuPlugin.CameraLayerCollection">
+            <summary>
+            カメラレイヤコレクション
+            </summary>
+        </member>
+        <member name="M:MikuMikuPlugin.CameraLayerCollection.GetEnumerator">
+            <summary>
+            Enumerator
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="P:MikuMikuPlugin.CameraLayerCollection.Count">
+            <summary>
+            カメラレイヤ数
+            </summary>
+        </member>
+        <member name="P:MikuMikuPlugin.CameraLayerCollection.Item(System.Int32)">
+            <summary>
+            カメラレイヤ
+            </summary>
+            <param name="index">インデックス</param>
+            <returns></returns>
+        </member>
+        <member name="T:MikuMikuPlugin.CameraLayer">
+            <summary>
+            カメラレイヤ
+            </summary>
+        </member>
+        <member name="P:MikuMikuPlugin.CameraLayer.CurrentLocalMotion">
+            <summary>
+            現在のカメラモーション
+            </summary>
+        </member>
+        <member name="P:MikuMikuPlugin.CameraLayer.Frames">
+            <summary>
+            フレーム
+            </summary>
+        </member>
+        <member name="P:MikuMikuPlugin.CameraLayer.LayerID">
+            <summary>
+            レイヤID
+            </summary>
+        </member>
+        <member name="P:MikuMikuPlugin.CameraLayer.Name">
+            <summary>
+            表示名
+            </summary>
+        </member>
+        <member name="P:MikuMikuPlugin.CameraLayer.SelectedFrames">
+            <summary>
+            選択中フレーム
+            </summary>
+        </member>
+        <member name="T:MikuMikuPlugin.CameraFrameCollection">
+            <summary>
+            カメラフレームコレクション
+            </summary>
+        </member>
+        <member name="M:MikuMikuPlugin.CameraFrameCollection.AddKeyFrame(MikuMikuPlugin.CameraFrameData)">
+            <summary>
+            キーフレームを追加する
+            </summary>
+            <param name="fdata">カメラフレーム</param>
+        </member>
+        <member name="M:MikuMikuPlugin.CameraFrameCollection.AddKeyFrame(System.Collections.Generic.List{MikuMikuPlugin.CameraFrameData})">
+            <summary>
+            複数のキーフレームを追加する
+            </summary>
+            <param name="framelist">カメラフレームリスト</param>
+        </member>
+        <member name="M:MikuMikuPlugin.CameraFrameCollection.GetEnumerator">
+            <summary>
+            Enumerator
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:MikuMikuPlugin.CameraFrameCollection.GetFrame(System.Int64)">
+            <summary>
+            指定フレームのカメラモーションを取得する
+            </summary>
+            <param name="frameNumber"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MikuMikuPlugin.CameraFrameCollection.GetKeyFrames">
+            <summary>
+            すべてのキーフレームについてコピーを取得する
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:MikuMikuPlugin.CameraFrameCollection.GetSelectedKeyFrames">
+            <summary>
+            選択中のキーフレームについてコピーを取得する
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:MikuMikuPlugin.CameraFrameCollection.RemoveKeyFrame(System.Int64)">
+            <summary>
+            キーフレームを削除する
+            </summary>
+            <param name="frameNumber">フレーム番号</param>
+        </member>
+        <member name="M:MikuMikuPlugin.CameraFrameCollection.ReplaceAllKeyFrames(System.Collections.Generic.List{MikuMikuPlugin.CameraFrameData})">
+            <summary>
+            キーフレームをすべて入れ替える
+            </summary>
+            <param name="framelist">カメラフレームリスト</param>
+        </member>
+        <member name="P:MikuMikuPlugin.CameraFrameCollection.Count">
+            <summary>
+            キーフレーム数
+            </summary>
+        </member>
+        <member name="P:MikuMikuPlugin.CameraFrameCollection.Item(System.Int32)">
+            <summary>
+            カメラフレーム
+            </summary>
+            <param name="index">インデックス</param>
+            <returns></returns>
+        </member>
+        <member name="T:MikuMikuPlugin.CameraSelectedFrameCollection">
+            <summary>
+            選択中カメラフレームコレクション
+            </summary>
+        </member>
+        <member name="M:MikuMikuPlugin.CameraSelectedFrameCollection.GetEnumerator">
+            <summary>
+            Enumerator
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:MikuMikuPlugin.IMotionFrameData">
+            <summary>
+            モーションフレームインターフェース
+            </summary>
+        </member>
+        <member name="P:MikuMikuPlugin.IMotionFrameData.FrameNumber">
+            <summary>フレーム番号</summary>
+        </member>
+        <member name="P:MikuMikuPlugin.IMotionFrameData.Selected">
+            <summary>選択フラグ</summary>
+        </member>
+        <member name="P:MikuMikuPlugin.IMotionFrameData.Position">
+            <summary>移動</summary>
+        </member>
+        <member name="P:MikuMikuPlugin.IMotionFrameData.Quaternion">
+            <summary>回転</summary>
+        </member>
+        <member name="P:MikuMikuPlugin.IMotionFrameData.InterpolXA">
+            <summary>補間曲線 移動X 点A</summary>
+        </member>
+        <member name="P:MikuMikuPlugin.IMotionFrameData.InterpolXB">
+            <summary>補間曲線 移動X 点B</summary>
+        </member>
+        <member name="P:MikuMikuPlugin.IMotionFrameData.InterpolYA">
+            <summary>補間曲線 移動Y 点A</summary>
+        </member>
+        <member name="P:MikuMikuPlugin.IMotionFrameData.InterpolYB">
+            <summary>補間曲線 移動Y 点B</summary>
+        </member>
+        <member name="P:MikuMikuPlugin.IMotionFrameData.InterpolZA">
+            <summary>補間曲線 移動Z 点A</summary>
+        </member>
+        <member name="P:MikuMikuPlugin.IMotionFrameData.InterpolZB">
+            <summary>補間曲線 移動Z 点B</summary>
+        </member>
+        <member name="P:MikuMikuPlugin.IMotionFrameData.InterpolRA">
+            <summary>補間曲線 回転 点A</summary>
+        </member>
+        <member name="P:MikuMikuPlugin.IMotionFrameData.InterpolRB">
+            <summary>補間曲線 回転 点B</summary>
+        </member>
+        <member name="T:MikuMikuPlugin.IMorphFrameData">
+            <summary>
+            モーフフレームインターフェース
+            </summary>
+        </member>
+        <member name="P:MikuMikuPlugin.IMorphFrameData.FrameNumber">
+            <summary>フレーム番号</summary>
+        </member>
+        <member name="P:MikuMikuPlugin.IMorphFrameData.Selected">
+            <summary>選択フラグ</summary>
+        </member>
+        <member name="P:MikuMikuPlugin.IMorphFrameData.Weight">
+            <summary>ウェイト</summary>
+        </member>
+        <member name="P:MikuMikuPlugin.IMorphFrameData.InterpolA">
+            <summary>補間曲線 点A</summary>
+        </member>
+        <member name="P:MikuMikuPlugin.IMorphFrameData.InterpolB">
+            <summary>補間曲線 点B</summary>
+        </member>
+        <member name="T:MikuMikuPlugin.IModelPropertyFrameData">
+            <summary>
+            モデルプロパティフレームインターフェース
+            </summary>
+        </member>
+        <member name="P:MikuMikuPlugin.IModelPropertyFrameData.FrameNumber">
+            <summary>フレーム番号</summary>
+        </member>
+        <member name="P:MikuMikuPlugin.IModelPropertyFrameData.Selected">
+            <summary>選択フラグ</summary>
+        </member>
+        <member name="P:MikuMikuPlugin.IModelPropertyFrameData.Visible">
+            <summary>表示フラグ</summary>
+        </member>
+        <member name="P:MikuMikuPlugin.IModelPropertyFrameData.AddBlending">
+            <summary>加算合成フラグ</summary>
+        </member>
+        <member name="P:MikuMikuPlugin.IModelPropertyFrameData.Shadow">
+            <summary>シャドウフラグ</summary>
+        </member>
+        <member name="P:MikuMikuPlugin.IModelPropertyFrameData.Physics">
+            <summary>物理演算フラグ</summary>
+        </member>
+        <member name="P:MikuMikuPlugin.IModelPropertyFrameData.PhysicsStillMode">
+            <summary>物理演算静止フラグ</summary>
+        </member>
+        <member name="P:MikuMikuPlugin.IModelPropertyFrameData.EdgeWidth">
+            <summary>エッジの太さ</summary>
+        </member>
+        <member name="P:MikuMikuPlugin.IModelPropertyFrameData.EdgeColor">
+            <summary>エッジ色</summary>
+        </member>
+        <member name="T:MikuMikuPlugin.ICameraFrameData">
+            <summary>
+            カメラフレームインターフェース
+            </summary>
+        </member>
+        <member name="P:MikuMikuPlugin.ICameraFrameData.FrameNumber">
+            <summary>フレーム番号</summary>
+        </member>
+        <member name="P:MikuMikuPlugin.ICameraFrameData.Selected">
+            <summary>選択フラグ</summary>
+        </member>
+        <member name="P:MikuMikuPlugin.ICameraFrameData.Position">
+            <summary>注視点位置</summary>
+        </member>
+        <member name="P:MikuMikuPlugin.ICameraFrameData.Angle">
+            <summary>回転角度(ラジアン)</summary>
+        </member>
+        <member name="P:MikuMikuPlugin.ICameraFrameData.Radius">
+            <summary>距離</summary>
+        </member>
+        <member name="P:MikuMikuPlugin.ICameraFrameData.Fov">
+            <summary>視野角(ラジアン)</summary>
+        </member>
+        <member name="P:MikuMikuPlugin.ICameraFrameData.InterpolMoveA">
+            <summary>注視点位置補間曲線 点A</summary>
+        </member>
+        <member name="P:MikuMikuPlugin.ICameraFrameData.InterpolMoveB">
+            <summary>注視点位置補間曲線 点B</summary>
+        </member>
+        <member name="P:MikuMikuPlugin.ICameraFrameData.InterpolRoteA">
+            <summary>回転角度補間曲線 点A</summary>
+        </member>
+        <member name="P:MikuMikuPlugin.ICameraFrameData.InterpolRoteB">
+            <summary>回転角度補間曲線 点B</summary>
+        </member>
+        <member name="P:MikuMikuPlugin.ICameraFrameData.InterpolDistA">
+            <summary>距離補間曲線 点A</summary>
+        </member>
+        <member name="P:MikuMikuPlugin.ICameraFrameData.InterpolDistB">
+            <summary>距離補間曲線 点B</summary>
+        </member>
+        <member name="P:MikuMikuPlugin.ICameraFrameData.InterpolFovA">
+            <summary>視野角補間曲線 点A</summary>
+        </member>
+        <member name="P:MikuMikuPlugin.ICameraFrameData.InterpolFovB">
+            <summary>視野角補間曲線 点B</summary>
+        </member>
+        <member name="T:MikuMikuPlugin.ILightFrameData">
+            <summary>
+            ライトフレームインターフェース
+            </summary>
+        </member>
+        <member name="P:MikuMikuPlugin.ILightFrameData.FrameNumber">
+            <summary>フレーム番号</summary>
+        </member>
+        <member name="P:MikuMikuPlugin.ILightFrameData.Selected">
+            <summary>選択フラグ</summary>
+        </member>
+        <member name="P:MikuMikuPlugin.ILightFrameData.Position">
+            <summary>位置</summary>
+        </member>
+        <member name="P:MikuMikuPlugin.ILightFrameData.Color">
+            <summary>色(RGB)</summary>
+        </member>
+        <member name="P:MikuMikuPlugin.ILightFrameData.InterpolPosA">
+            <summary>位置補間曲線 点A</summary>
+        </member>
+        <member name="P:MikuMikuPlugin.ILightFrameData.InterpolPosB">
+            <summary>位置補間曲線 点B</summary>
+        </member>
+        <member name="P:MikuMikuPlugin.ILightFrameData.InterpolColorA">
+            <summary>色補間曲線 点A</summary>
+        </member>
+        <member name="P:MikuMikuPlugin.ILightFrameData.InterpolColorB">
+            <summary>色補間曲線 点B</summary>
+        </member>
+        <member name="T:MikuMikuPlugin.ISceneFrameData">
+            <summary>
+            シーンフレームインターフェース
+            </summary>
+        </member>
+        <member name="P:MikuMikuPlugin.ISceneFrameData.FrameNumber">
+            <summary>フレーム番号</summary>
+        </member>
+        <member name="P:MikuMikuPlugin.ISceneFrameData.Selected">
+            <summary>選択フラグ</summary>
+        </member>
+        <member name="P:MikuMikuPlugin.ISceneFrameData.SelfShadowDistance">
+            <summary>セルフシャドウ距離</summary>
+        </member>
+        <member name="P:MikuMikuPlugin.ISceneFrameData.SelfShadowDeep">
+            <summary>セルフシャドウの濃さ</summary>
+        </member>
+        <member name="P:MikuMikuPlugin.ISceneFrameData.GravityDirection">
+            <summary>重力方向</summary>
+        </member>
+        <member name="P:MikuMikuPlugin.ISceneFrameData.Gravity">
+            <summary>重力の大きさ</summary>
+        </member>
+        <member name="T:MikuMikuPlugin.ICaption">
+            <summary>
+            字幕インターフェース
+            </summary>
+        </member>
+        <member name="P:MikuMikuPlugin.ICaption.StartFrame">
+            <summary>開始フレーム</summary>
+        </member>
+        <member name="P:MikuMikuPlugin.ICaption.DurationFrame">
+            <summary>長さ(フレーム)</summary>
+        </member>
+        <member name="P:MikuMikuPlugin.ICaption.FadeInFrame">
+            <summary>フェードインフレーム</summary>
+        </member>
+        <member name="P:MikuMikuPlugin.ICaption.FadeOutFrame">
+            <summary>フェードアウトフレーム</summary>
+        </member>
+        <member name="P:MikuMikuPlugin.ICaption.Location">
+            <summary>位置</summary>
+        </member>
+        <member name="P:MikuMikuPlugin.ICaption.FontFamily">
+            <summary>FontFamily</summary>
+        </member>
+        <member name="P:MikuMikuPlugin.ICaption.FontStyle">
+            <summary>FontStyle</summary>
+        </member>
+        <member name="P:MikuMikuPlugin.ICaption.FontSize">
+            <summary>FontSize</summary>
+        </member>
+        <member name="P:MikuMikuPlugin.ICaption.DrawShadow">
+            <summary>文字影</summary>
+        </member>
+        <member name="P:MikuMikuPlugin.ICaption.ShadowDistance">
+            <summary>影距離</summary>
+        </member>
+        <member name="P:MikuMikuPlugin.ICaption.Alpha">
+            <summary>アルファ</summary>
+        </member>
+        <member name="P:MikuMikuPlugin.ICaption.LineSpace">
+            <summary>行間</summary>
+        </member>
+        <member name="P:MikuMikuPlugin.ICaption.LetterSpace">
+            <summary>字間</summary>
+        </member>
+        <member name="P:MikuMikuPlugin.ICaption.TextColor">
+            <summary>テキスト色</summary>
+        </member>
+        <member name="P:MikuMikuPlugin.ICaption.DrawTextBorder">
+            <summary>縁取り</summary>
+        </member>
+        <member name="P:MikuMikuPlugin.ICaption.TextBorderWeight">
+            <summary>縁取り太さ</summary>
+        </member>
+        <member name="P:MikuMikuPlugin.ICaption.TextBorderColor">
+            <summary>縁取り色</summary>
+        </member>
+        <member name="P:MikuMikuPlugin.ICaption.Rotate">
+            <summary>回転</summary>
+        </member>
+        <member name="P:MikuMikuPlugin.ICaption.HorizontalAlignment">
+            <summary>水平揃え</summary>
+        </member>
+        <member name="P:MikuMikuPlugin.ICaption.Text">
+            <summary>テキスト</summary>
+        </member>
+        <member name="T:MikuMikuPlugin.MotionLayerCollection">
+            <summary>
+            モーションレイヤーコレクション
+            </summary>
+        </member>
+        <member name="M:MikuMikuPlugin.MotionLayerCollection.GetEnumerator">
+            <summary>
+            Enumerator
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="P:MikuMikuPlugin.MotionLayerCollection.Count">
+            <summary>
+            レイヤ数
+            </summary>
+        </member>
+        <member name="P:MikuMikuPlugin.MotionLayerCollection.Item(System.Int32)">
+            <summary>
+            モーションレイヤ
+            </summary>
+            <param name="index">インデックス</param>
+            <returns></returns>
+        </member>
+        <member name="T:MikuMikuPlugin.SelectedMotionLayerCollection">
+            <summary>
+            選択中モーションレイヤコレクション
+            </summary>
+        </member>
+        <member name="M:MikuMikuPlugin.SelectedMotionLayerCollection.GetEnumerator">
+            <summary>
+            Enumerator
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:MikuMikuPlugin.MotionLayer">
+            <summary>
+            モーションレイヤ
+            </summary>
+        </member>
+        <member name="P:MikuMikuPlugin.MotionLayer.CurrentLocalMotion">
+            <summary>
+            現在のモーション
+            </summary>
+        </member>
+        <member name="P:MikuMikuPlugin.MotionLayer.Frames">
+            <summary>
+            フレーム
+            </summary>
+        </member>
+        <member name="P:MikuMikuPlugin.MotionLayer.LayerID">
+            <summary>
+            レイヤID
+            </summary>
+        </member>
+        <member name="P:MikuMikuPlugin.MotionLayer.Name">
+            <summary>
+            名前
+            </summary>
+        </member>
+        <member name="P:MikuMikuPlugin.MotionLayer.Selected">
+            <summary>
+            選択フラグ
+            </summary>
+        </member>
+        <member name="P:MikuMikuPlugin.MotionLayer.SelectedFrames">
+            <summary>
+            選択中フレーム
+            </summary>
+        </member>
+        <member name="T:MikuMikuPlugin.LightCollection">
+            <summary>
+            ライトコレクション
+            </summary>
+        </member>
+        <member name="M:MikuMikuPlugin.LightCollection.GetEnumerator">
+            <summary>
+            Enumerator
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="P:MikuMikuPlugin.LightCollection.Count">
+            <summary>
+            ライト数
+            </summary>
+        </member>
+        <member name="P:MikuMikuPlugin.LightCollection.Item(System.Int32)">
+            <summary>
+            ライト
+            </summary>
+            <param name="index">インデックス</param>
+            <returns></returns>
+        </member>
+        <member name="T:MikuMikuPlugin.Light">
+            <summary>
+            ライト
+            </summary>
+        </member>
+        <member name="P:MikuMikuPlugin.Light.CurrentMotion">
+            <summary>
+            現在のライトモーション
+            </summary>
+        </member>
+        <member name="P:MikuMikuPlugin.Light.Frames">
+            <summary>
+            フレーム
+            </summary>
+        </member>
+        <member name="P:MikuMikuPlugin.Light.SelectedFrames">
+            <summary>
+            選択中フレーム
+            </summary>
+        </member>
+        <member name="T:MikuMikuPlugin.LightFrameCollection">
+            <summary>
+            ライトフレームコレクション
+            </summary>
+        </member>
+        <member name="M:MikuMikuPlugin.LightFrameCollection.AddKeyFrame(MikuMikuPlugin.LightFrameData)">
+            <summary>
+            キーフレームを追加する
+            </summary>
+            <param name="fdata">ライトフレーム</param>
+        </member>
+        <member name="M:MikuMikuPlugin.LightFrameCollection.AddKeyFrame(System.Collections.Generic.List{MikuMikuPlugin.LightFrameData})">
+            <summary>
+            複数のキーフレームを追加する
+            </summary>
+            <param name="framelist">フレームリスト</param>
+        </member>
+        <member name="M:MikuMikuPlugin.LightFrameCollection.GetEnumerator">
+            <summary>
+            Enumerator
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:MikuMikuPlugin.LightFrameCollection.GetFrame(System.Int64)">
+            <summary>
+            指定フレームのライトモーションを取得する
+            </summary>
+            <param name="frameNumber">フレーム番号</param>
+            <returns></returns>
+        </member>
+        <member name="M:MikuMikuPlugin.LightFrameCollection.GetKeyFrames">
+            <summary>
+            すべてのキーフレームについてコピーを取得する
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:MikuMikuPlugin.LightFrameCollection.GetSelectedKeyFrames">
+            <summary>
+            選択中のキーフレームについてコピーを取得する
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:MikuMikuPlugin.LightFrameCollection.RemoveKeyFrame(System.Int64)">
+            <summary>
+            キーフレームを削除する
+            </summary>
+            <param name="frameNumber">フレーム番号</param>
+        </member>
+        <member name="M:MikuMikuPlugin.LightFrameCollection.ReplaceAllKeyFrames(System.Collections.Generic.List{MikuMikuPlugin.LightFrameData})">
+            <summary>
+            すべてのキーフレームを置き換える
+            </summary>
+            <param name="framelist">フレームリスト</param>
+        </member>
+        <member name="P:MikuMikuPlugin.LightFrameCollection.Count">
+            <summary>
+            キーフレーム数
+            </summary>
+        </member>
+        <member name="P:MikuMikuPlugin.LightFrameCollection.Item(System.Int32)">
+            <summary>
+            ライトフレーム
+            </summary>
+            <param name="index">インデックス</param>
+            <returns></returns>
+        </member>
+        <member name="T:MikuMikuPlugin.SelectedLightFrameCollection">
+            <summary>
+            選択中ライトフレームコレクション
+            </summary>
+        </member>
+        <member name="M:MikuMikuPlugin.SelectedLightFrameCollection.GetEnumerator">
+            <summary>
+            Enumerator
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:MikuMikuPlugin.ModelCollection">
+            <summary>
+            モデルコレクション
+            </summary>
+        </member>
+        <member name="M:MikuMikuPlugin.ModelCollection.GetEnumerator">
+            <summary>
+            Enumerator
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="P:MikuMikuPlugin.ModelCollection.Count">
+            <summary>
+            モデル数
+            </summary>
+        </member>
+        <member name="P:MikuMikuPlugin.ModelCollection.Item(System.Int32)">
+            <summary>
+            モデル
+            </summary>
+            <param name="index">インデックス</param>
+            <returns></returns>
+        </member>
+        <member name="T:MikuMikuPlugin.Model">
+            <summary>
+            モデル
+            </summary>
+        </member>
+        <member name="P:MikuMikuPlugin.Model.Bones">
+            <summary>
+            ボーン
+            </summary>
+        </member>
+        <member name="P:MikuMikuPlugin.Model.DisplayFrame">
+            <summary>
+            表示枠
+            </summary>
+        </member>
+        <member name="P:MikuMikuPlugin.Model.DisplayName">
+            <summary>
+            表示名
+            </summary>
+        </member>
+        <member name="P:MikuMikuPlugin.Model.EnglishName">
+            <summary>
+            英語名
+            </summary>
+        </member>
+        <member name="P:MikuMikuPlugin.Model.GUID">
+            <summary>
+            GUID
+            </summary>
+        </member>
+        <member name="P:MikuMikuPlugin.Model.ID">
+            <summary>
+            モデルID
+            </summary>
+        </member>
+        <member name="P:MikuMikuPlugin.Model.Materials">
+            <summary>
+            材質
+            </summary>
+        </member>
+        <member name="P:MikuMikuPlugin.Model.Morphs">
+            <summary>
+            モーフ
+            </summary>
+        </member>
+        <member name="P:MikuMikuPlugin.Model.Name">
+            <summary>
+            名前
+            </summary>
+        </member>
+        <member name="P:MikuMikuPlugin.Model.PropertyFrames">
+            <summary>
+            プロパティフレーム
+            </summary>
+        </member>
+        <member name="P:MikuMikuPlugin.Model.SelectedPropertyFrames">
+            <summary>
+            選択中プロパティフレーム
+            </summary>
+        </member>
+        <member name="T:MikuMikuPlugin.EffectCollection">
+            <summary>
+            エフェクトコレクション
+            </summary>
+        </member>
+        <member name="M:MikuMikuPlugin.EffectCollection.GetEnumerator">
+            <summary>
+            Enumerator
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="P:MikuMikuPlugin.EffectCollection.Count">
+            <summary>
+            エフェクト数
+            </summary>
+        </member>
+        <member name="P:MikuMikuPlugin.EffectCollection.Item(System.Int32)">
+            <summary>
+            エフェクト
+            </summary>
+            <param name="index">インデックス</param>
+            <returns></returns>
+        </member>
+        <member name="T:MikuMikuPlugin.Effect">
+            <summary>
+            エフェクト
+            </summary>
+        </member>
+        <member name="P:MikuMikuPlugin.Effect.CurrentLocalMotion">
+            <summary>
+            現在のモーション
+            </summary>
+        </member>
+        <member name="P:MikuMikuPlugin.Effect.Frames">
+            <summary>
+            フレーム
+            </summary>
+        </member>
+        <member name="P:MikuMikuPlugin.Effect.SelectedFrames">
+            <summary>
+            選択中フレーム
+            </summary>
+        </member>
+        <member name="P:MikuMikuPlugin.Effect.GUID">
+            <summary>
+            GUID
+            </summary>
+        </member>
+        <member name="P:MikuMikuPlugin.Effect.ID">
+            <summary>
+            エフェクトID
+            </summary>
+        </member>
+        <member name="T:MikuMikuPlugin.MorphCollection">
+            <summary>
+            モーフコレクション
+            </summary>
+        </member>
+        <member name="M:MikuMikuPlugin.MorphCollection.GetEnumerator">
+            <summary>
+            Enumerator
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="P:MikuMikuPlugin.MorphCollection.Count">
+            <summary>
+            モーフ数
+            </summary>
+        </member>
+        <member name="P:MikuMikuPlugin.MorphCollection.Item(System.Int32)">
+            <summary>
+            モーフ
+            </summary>
+            <param name="index">インデックス</param>
+            <returns></returns>
+        </member>
+        <member name="P:MikuMikuPlugin.MorphCollection.Item(System.String)">
+            <summary>
+            モーフ
+            </summary>
+            <param name="name">モーフ名</param>
+            <returns></returns>
+        </member>
+        <member name="T:MikuMikuPlugin.ISelectedMorphCollection">
+            <summary>
+            選択中モーフコレクション
+            </summary>
+        </member>
+        <member name="T:MikuMikuPlugin.Morph">
+            <summary>
+            モーフ
+            </summary>
+        </member>
+        <member name="P:MikuMikuPlugin.Morph.CurrentWeight">
+            <summary>
+            現在のウェイト
+            </summary>
+        </member>
+        <member name="P:MikuMikuPlugin.Morph.DisplayName">
+            <summary>
+            表示名
+            </summary>
+        </member>
+        <member name="P:MikuMikuPlugin.Morph.EnglishName">
+            <summary>
+            英語名
+            </summary>
+        </member>
+        <member name="P:MikuMikuPlugin.Morph.Frames">
+            <summary>
+            フレーム
+            </summary>
+        </member>
+        <member name="P:MikuMikuPlugin.Morph.MorphID">
+            <summary>
+            モーフID
+            </summary>
+        </member>
+        <member name="P:MikuMikuPlugin.Morph.MorphType">
+            <summary>
+            モーフの種類
+            </summary>
+        </member>
+        <member name="P:MikuMikuPlugin.Morph.Name">
+            <summary>
+            名前
+            </summary>
+        </member>
+        <member name="P:MikuMikuPlugin.Morph.PanelType">
+            <summary>
+            パネル種類
+            </summary>
+        </member>
+        <member name="P:MikuMikuPlugin.Morph.Selected">
+            <summary>
+            選択フラグ
+            </summary>
+        </member>
+        <member name="P:MikuMikuPlugin.Morph.SelectedFrames">
+            <summary>
+            選択中フレーム
+            </summary>
+        </member>
+        <member name="T:MikuMikuPlugin.MorphFrameCollection">
+            <summary>
+            モーフフレームコレクション
+            </summary>
+        </member>
+        <member name="M:MikuMikuPlugin.MorphFrameCollection.AddKeyFrame(MikuMikuPlugin.MorphFrameData)">
+            <summary>
+            キーフレームを追加する
+            </summary>
+            <param name="fdata">フレーム</param>
+        </member>
+        <member name="M:MikuMikuPlugin.MorphFrameCollection.AddKeyFrame(System.Collections.Generic.List{MikuMikuPlugin.MorphFrameData})">
+            <summary>
+            複数のキーフレームを追加する
+            </summary>
+            <param name="framelist">フレームリスト</param>
+        </member>
+        <member name="M:MikuMikuPlugin.MorphFrameCollection.GetEnumerator">
+            <summary>
+            Enumerator
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:MikuMikuPlugin.MorphFrameCollection.GetFrame(System.Int64)">
+            <summary>
+            指定フレームのモーフモーションを取得する
+            </summary>
+            <param name="frameNumber"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MikuMikuPlugin.MorphFrameCollection.GetKeyFrames">
+            <summary>
+            すべてのキーフレームについてコピーを取得する
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:MikuMikuPlugin.MorphFrameCollection.GetSelectedKeyFrames">
+            <summary>
+            選択中のキーフレームについてコピーを取得する
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:MikuMikuPlugin.MorphFrameCollection.RemoveKeyFrame(System.Int64)">
+            <summary>
+            キーフレームを削除する
+            </summary>
+            <param name="frameNumber">フレーム番号</param>
+        </member>
+        <member name="M:MikuMikuPlugin.MorphFrameCollection.ReplaceAllKeyFrames(System.Collections.Generic.List{MikuMikuPlugin.MorphFrameData})">
+            <summary>
+            すべてのキーフレームを置き換える
+            </summary>
+            <param name="framelist">フレームリスト</param>
+        </member>
+        <member name="P:MikuMikuPlugin.MorphFrameCollection.Count">
+            <summary>
+            フレーム数
+            </summary>
+        </member>
+        <member name="P:MikuMikuPlugin.MorphFrameCollection.Item(System.Int32)">
+            <summary>
+            モーフフレーム
+            </summary>
+            <param name="index">インデックス</param>
+            <returns></returns>
+        </member>
+        <member name="T:MikuMikuPlugin.SelectedMorphFrameCollection">
+            <summary>
+            選択中モーフフレームコレクション
+            </summary>
+        </member>
+        <member name="M:MikuMikuPlugin.SelectedMorphFrameCollection.GetEnumerator">
+            <summary>
+            Enumerator
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:MikuMikuPlugin.CommandArgs">
+            <summary>
+            コマンドプラグイン用Args
+            </summary>
+        </member>
+        <member name="M:MikuMikuPlugin.CommandArgs.#ctor">
+            <summary>
+            コンストラクタ
+            </summary>
+        </member>
+        <member name="P:MikuMikuPlugin.CommandArgs.Cancel">
+            <summary>
+            キャンセル(変更フラグが立ちません)
+            </summary>
+        </member>
+        <member name="T:MikuMikuPlugin.IBasePlugin">
+            <summary>
+            すべてのプラグインに共通のインターフェース
+            </summary>
+        </member>
+        <member name="P:MikuMikuPlugin.IBasePlugin.GUID">
+            <summary>
+            プラグインのGUID
+            </summary>
+        </member>
+        <member name="P:MikuMikuPlugin.IBasePlugin.Description">
+            <summary>
+            プラグインの名前や作者名、プラグインの説明
+            </summary>
+        </member>
+        <member name="P:MikuMikuPlugin.IBasePlugin.ApplicationForm">
+            <summary>
+            本体フォーム
+            </summary>
+        </member>
+        <member name="T:MikuMikuPlugin.IButtonPlugin">
+            <summary>
+            ボタンを持つプラグインのインターフェース
+            </summary>
+        </member>
+        <member name="P:MikuMikuPlugin.IButtonPlugin.Text">
+            <summary>
+            ボタンに表示するテキスト
+            </summary>
+        </member>
+        <member name="P:MikuMikuPlugin.IButtonPlugin.EnglishText">
+            <summary>
+            ボタンに表示する英語テキスト
+            </summary>
+        </member>
+        <member name="P:MikuMikuPlugin.IButtonPlugin.Image">
+            <summary>
+            ボタンに表示するアイコン画像(32x32)
+            </summary>
+        </member>
+        <member name="P:MikuMikuPlugin.IButtonPlugin.SmallImage">
+            <summary>
+            中コマンドバーに表示するアイコン画像(20x20)
+            </summary>
+        </member>
+        <member name="T:MikuMikuPlugin.IHaveScenePlugin">
+            <summary>
+            シーンを持つプラグインのインターフェース
+            </summary>
+        </member>
+        <member name="P:MikuMikuPlugin.IHaveScenePlugin.Scene">
+            <summary>
+            シーン
+            </summary>
+        </member>
+        <member name="T:MikuMikuPlugin.ICanSavePlugin">
+            <summary>
+            プロジェクトに保存が可能なプラグインのインターフェース
+            </summary>
+        </member>
+        <member name="M:MikuMikuPlugin.ICanSavePlugin.OnSaveProject">
+            <summary>
+            プロジェクトが保存されたときに呼ばれる
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:MikuMikuPlugin.ICanSavePlugin.OnLoadProject(System.IO.Stream)">
+            <summary>
+            プロジェクトが開かれたときに、自身の保存項目が存在する場合に呼ばれる
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:MikuMikuPlugin.IHaveUserControl">
+            <summary>
+            ユーザーコントロールを持つプラグインのインターフェース
+            </summary>
+        </member>
+        <member name="M:MikuMikuPlugin.IHaveUserControl.CreateControl">
+            <summary>
+            ユーザーコントロールをここで生成してください。
+            </summary>
+        </member>
+        <member name="T:MikuMikuPlugin.MotionFrameCollection">
+            <summary>
+            モーションフレームコレクション
+            </summary>
+        </member>
+        <member name="M:MikuMikuPlugin.MotionFrameCollection.AddKeyFrame(MikuMikuPlugin.MotionFrameData)">
+            <summary>
+            キーフレームを追加する
+            </summary>
+            <param name="fdata">フレーム</param>
+        </member>
+        <member name="M:MikuMikuPlugin.MotionFrameCollection.AddKeyFrame(System.Collections.Generic.List{MikuMikuPlugin.MotionFrameData})">
+            <summary>
+            複数のキーフレームを追加する
+            </summary>
+            <param name="framelist">フレームリスト</param>
+        </member>
+        <member name="M:MikuMikuPlugin.MotionFrameCollection.GetEnumerator">
+            <summary>
+            Enumerator
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:MikuMikuPlugin.MotionFrameCollection.GetFrame(System.Int64)">
+            <summary>
+            指定フレームのモーションを取得する
+            </summary>
+            <param name="frameNumber">フレーム番号</param>
+            <returns></returns>
+        </member>
+        <member name="M:MikuMikuPlugin.MotionFrameCollection.GetKeyFrames">
+            <summary>
+            すべてのキーフレームについてコピーを取得する
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:MikuMikuPlugin.MotionFrameCollection.GetSelectedKeyFrames">
+            <summary>
+            選択中のキーフレームについてコピーを取得する
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:MikuMikuPlugin.MotionFrameCollection.RemoveKeyFrame(System.Int64)">
+            <summary>
+            キーフレームを削除する
+            </summary>
+            <param name="frameNumber">フレーム番号</param>
+        </member>
+        <member name="M:MikuMikuPlugin.MotionFrameCollection.ReplaceAllKeyFrames(System.Collections.Generic.List{MikuMikuPlugin.MotionFrameData})">
+            <summary>
+            すべてのキーフレームを置き換える
+            </summary>
+            <param name="framelist">フレームリスト</param>
+        </member>
+        <member name="P:MikuMikuPlugin.MotionFrameCollection.Count">
+            <summary>
+            フレーム数
+            </summary>
+        </member>
+        <member name="P:MikuMikuPlugin.MotionFrameCollection.Item(System.Int32)">
+            <summary>
+            モーションフレーム
+            </summary>
+            <param name="index">インデックス</param>
+            <returns></returns>
+        </member>
+        <member name="T:MikuMikuPlugin.SelectedMotionFrameCollection">
+            <summary>
+            選択中のモーションフレームコレクション
+            </summary>
+        </member>
+        <member name="M:MikuMikuPlugin.SelectedMotionFrameCollection.GetEnumerator">
+            <summary>
+            Enumerator
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:MikuMikuPlugin.ScreenObjectCollection">
+            <summary>
+            スクリーンオブジェクトコレクション
+            </summary>
+        </member>
+        <member name="M:MikuMikuPlugin.ScreenObjectCollection.Add(MikuMikuPlugin.ScreenObject)">
+            <summary>
+            スクリーンオブジェクトを追加する
+            </summary>
+            <param name="screenobj">スクリーンオブジェクト</param>
+        </member>
+        <member name="M:MikuMikuPlugin.ScreenObjectCollection.GetEnumerator">
+            <summary>
+            Enumerator
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:MikuMikuPlugin.ScreenObjectCollection.Remove(MikuMikuPlugin.ScreenObject)">
+            <summary>
+            スクリーンオブジェクトを削除する
+            </summary>
+            <param name="screenobj">スクリーンオブジェクト</param>
+        </member>
+        <member name="M:MikuMikuPlugin.ScreenObjectCollection.RemoveAt(System.Int32)">
+            <summary>
+            スクリーンオブジェクトを削除する
+            </summary>
+            <param name="index">スクリーンオブジェクト</param>
+        </member>
+        <member name="P:MikuMikuPlugin.ScreenObjectCollection.Count">
+            <summary>
+            スクリーンオブジェクト数
+            </summary>
+        </member>
+        <member name="P:MikuMikuPlugin.ScreenObjectCollection.Item(System.Int32)">
+            <summary>
+            スクリーンオブジェクト
+            </summary>
+            <param name="index">インデックス</param>
+            <returns></returns>
+        </member>
+        <member name="T:MikuMikuPlugin.MaterialCollection">
+            <summary>
+            材質コレクション
+            </summary>
+        </member>
+        <member name="M:MikuMikuPlugin.MaterialCollection.GetEnumerator">
+            <summary>
+            Enumerator
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="P:MikuMikuPlugin.MaterialCollection.Count">
+            <summary>
+            材質数
+            </summary>
+        </member>
+        <member name="P:MikuMikuPlugin.MaterialCollection.Item(System.Int32)">
+            <summary>
+            材質
+            </summary>
+            <param name="index">インデックス</param>
+            <returns></returns>
+        </member>
+        <member name="T:MikuMikuPlugin.Material">
+            <summary>
+            マテリアルインターフェース
+            </summary>
+        </member>
+        <member name="P:MikuMikuPlugin.Material.Name">
+            <summary>名前</summary>
+        </member>
+        <member name="P:MikuMikuPlugin.Material.EnglishName">
+            <summary>英語名</summary>
+        </member>
+        <member name="P:MikuMikuPlugin.Material.DisplayName">
+            <summary>英語名</summary>
+        </member>
+        <member name="P:MikuMikuPlugin.Material.Diffuse">
+            <summary>Diffuse</summary>
+        </member>
+        <member name="P:MikuMikuPlugin.Material.Specular">
+            <summary>Specular</summary>
+        </member>
+        <member name="P:MikuMikuPlugin.Material.SpecularPower">
+            <summary>Specular係数</summary>
+        </member>
+        <member name="P:MikuMikuPlugin.Material.Ambient">
+            <summary>Ambient</summary>
+        </member>
+        <member name="P:MikuMikuPlugin.Material.Emissive">
+            <summary>Emissive</summary>
+        </member>
+        <member name="P:MikuMikuPlugin.Material.DrawBothFace">
+            <summary>両面描画</summary>
+        </member>
+        <member name="P:MikuMikuPlugin.Material.DrawGroundShadow">
+            <summary>地面影</summary>
+        </member>
+        <member name="P:MikuMikuPlugin.Material.DrawSelfShadowMap">
+            <summary>セルフシャドウマップへの描画</summary>
+        </member>
+        <member name="P:MikuMikuPlugin.Material.DrawSelfShadow">
+            <summary>セルフシャドウ</summary>
+        </member>
+        <member name="P:MikuMikuPlugin.Material.DrawEdge">
+            <summary>エッジ</summary>
+        </member>
+        <member name="P:MikuMikuPlugin.Material.IsScreen">
+            <summary>スクリーンフラグ</summary>
+        </member>
+        <member name="P:MikuMikuPlugin.Material.EdgeColor">
+            <summary>エッジ色</summary>
+        </member>
+        <member name="P:MikuMikuPlugin.Material.EdgeSize">
+            <summary>エッジサイズ</summary>
+        </member>
+        <member name="P:MikuMikuPlugin.Material.Memo">
+            <summary>メモ</summary>
+        </member>
+        <member name="P:MikuMikuPlugin.Material.Original">
+            <summary>オリジナルの材質</summary>
+        </member>
+        <member name="T:MikuMikuPlugin.OriginalMaterial">
+            <summary>
+            オリジナルの材質
+            </summary>
+        </member>
+        <member name="P:MikuMikuPlugin.OriginalMaterial.Ambient">
+            <summary>Ambient</summary>
+        </member>
+        <member name="P:MikuMikuPlugin.OriginalMaterial.Diffuse">
+            <summary>Diffuse</summary>
+        </member>
+        <member name="P:MikuMikuPlugin.OriginalMaterial.DrawBothFace">
+            <summary>両面描画</summary>
+        </member>
+        <member name="P:MikuMikuPlugin.OriginalMaterial.DrawEdge">
+            <summary>エッジ</summary>
+        </member>
+        <member name="P:MikuMikuPlugin.OriginalMaterial.DrawGroundShadow">
+            <summary>地面影</summary>
+        </member>
+        <member name="P:MikuMikuPlugin.OriginalMaterial.DrawSelfShadow">
+            <summary>セルフシャドウ</summary>
+        </member>
+        <member name="P:MikuMikuPlugin.OriginalMaterial.DrawSelfShadowMap">
+            <summary>セルフシャドウマップへの描画</summary>
+        </member>
+        <member name="P:MikuMikuPlugin.OriginalMaterial.EdgeColor">
+            <summary>エッジ色</summary>
+        </member>
+        <member name="P:MikuMikuPlugin.OriginalMaterial.EdgeSize">
+            <summary>エッジサイズ</summary>
+        </member>
+        <member name="P:MikuMikuPlugin.OriginalMaterial.Emissive">
+            <summary>Emissive</summary>
+        </member>
+        <member name="P:MikuMikuPlugin.OriginalMaterial.IsScreen">
+            <summary>スクリーンフラグ</summary>
+        </member>
+        <member name="P:MikuMikuPlugin.OriginalMaterial.Memo">
+            <summary>メモ</summary>
+        </member>
+        <member name="P:MikuMikuPlugin.OriginalMaterial.Specular">
+            <summary>Specular</summary>
+        </member>
+        <member name="P:MikuMikuPlugin.OriginalMaterial.SpecularPower">
+            <summary>Specular係数</summary>
+        </member>
+        <member name="T:MikuMikuPlugin.DisplayFrameCollection">
+            <summary>
+            表示枠コレクション
+            </summary>
+        </member>
+        <member name="M:MikuMikuPlugin.DisplayFrameCollection.GetEnumerator">
+            <summary>
+            Enumerator
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="P:MikuMikuPlugin.DisplayFrameCollection.Count">
+            <summary>
+            表示枠数
+            </summary>
+        </member>
+        <member name="P:MikuMikuPlugin.DisplayFrameCollection.Item(System.Int32)">
+            <summary>
+            表示枠
+            </summary>
+            <param name="index">インデックス</param>
+            <returns></returns>
+        </member>
+        <member name="T:MikuMikuPlugin.DisplayFrame">
+            <summary>
+            表示枠
+            </summary>
+        </member>
+        <member name="P:MikuMikuPlugin.DisplayFrame.Bones">
+            <summary>
+            表示枠に含まれるボーン
+            </summary>
+        </member>
+        <member name="P:MikuMikuPlugin.DisplayFrame.DisplayName">
+            <summary>
+            表示名
+            </summary>
+        </member>
+        <member name="P:MikuMikuPlugin.DisplayFrame.EnglishName">
+            <summary>
+            英語名
+            </summary>
+        </member>
+        <member name="P:MikuMikuPlugin.DisplayFrame.Morphs">
+            <summary>
+            表示枠に含まれるモーフ
+            </summary>
+        </member>
+        <member name="P:MikuMikuPlugin.DisplayFrame.Name">
+            <summary>
+            名前
+            </summary>
+        </member>
+        <member name="T:MikuMikuPlugin.DisplayFrameBoneCollection">
+            <summary>
+            表示枠ボーンコレクション
+            </summary>
+        </member>
+        <member name="M:MikuMikuPlugin.DisplayFrameBoneCollection.GetEnumerator">
+            <summary>
+            Enumerator
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:MikuMikuPlugin.DisplayFrameMorphCollection">
+            <summary>
+            表示枠モーフコレクション
+            </summary>
+        </member>
+        <member name="M:MikuMikuPlugin.DisplayFrameMorphCollection.GetEnumerator">
+            <summary>
+            Enumerator
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:MikuMikuPlugin.SceneState">
+            <summary>
+            シーンステート
+            </summary>
+        </member>
+        <member name="F:MikuMikuPlugin.SceneState.Editing">
+            <summary>編集中</summary>
+        </member>
+        <member name="F:MikuMikuPlugin.SceneState.Playing">
+            <summary>再生中</summary>
+        </member>
+        <member name="F:MikuMikuPlugin.SceneState.KinectCapturing">
+            <summary>Kinectキャプチャ中</summary>
+        </member>
+        <member name="F:MikuMikuPlugin.SceneState.PhysicsBaking">
+            <summary>物理焼きこみ中</summary>
+        </member>
+        <member name="F:MikuMikuPlugin.SceneState.AVI_Rendering">
+            <summary>AVI出力中</summary>
+        </member>
+        <member name="T:MikuMikuPlugin.EditMode">
+            <summary>
+            モード (編集中ステート時のみ有効
+            </summary>
+        </member>
+        <member name="F:MikuMikuPlugin.EditMode.None">
+            <summary>なし</summary>
+        </member>
+        <member name="F:MikuMikuPlugin.EditMode.ModelMode">
+            <summary>モデルモード</summary>
+        </member>
+        <member name="F:MikuMikuPlugin.EditMode.AccessoryMode">
+            <summary>アクセサリモード</summary>
+        </member>
+        <member name="F:MikuMikuPlugin.EditMode.CameraMode">
+            <summary>カメラモード</summary>
+        </member>
+        <member name="F:MikuMikuPlugin.EditMode.EffectMode">
+            <summary>エフェクトモード</summary>
+        </member>
+        <member name="F:MikuMikuPlugin.EditMode.CaptionMode">
+            <summary>字幕モード</summary>
+        </member>
+        <member name="T:MikuMikuPlugin.BoneType">
+            <summary>
+            ボーンフラグ
+            </summary>
+        </member>
+        <member name="F:MikuMikuPlugin.BoneType.LinkTargetByBoneIndex">
+            <summary>ボーンIndexによるLinkTarget</summary>
+        </member>
+        <member name="F:MikuMikuPlugin.BoneType.Rotate">
+            <summary>回転</summary>
+        </member>
+        <member name="F:MikuMikuPlugin.BoneType.XYZ">
+            <summary>移動</summary>
+        </member>
+        <member name="F:MikuMikuPlugin.BoneType.Draw">
+            <summary>描画</summary>
+        </member>
+        <member name="F:MikuMikuPlugin.BoneType.Operatable">
+            <summary>操作可能</summary>
+        </member>
+        <member name="F:MikuMikuPlugin.BoneType.IK">
+            <summary>IK</summary>
+        </member>
+        <member name="F:MikuMikuPlugin.BoneType.InhereRotate">
+            <summary>回転付与</summary>
+        </member>
+        <member name="F:MikuMikuPlugin.BoneType.InhereXYZ">
+            <summary>移動付与</summary>
+        </member>
+        <member name="F:MikuMikuPlugin.BoneType.FixAxis">
+            <summary>軸固定</summary>
+        </member>
+        <member name="F:MikuMikuPlugin.BoneType.LocalAxis">
+            <summary>ローカル軸</summary>
+        </member>
+        <member name="F:MikuMikuPlugin.BoneType.TransformAfterPhysics">
+            <summary>物理後変形</summary>
+        </member>
+        <member name="F:MikuMikuPlugin.BoneType.ParentTransform">
+            <summary></summary>
+        </member>
+        <member name="T:MikuMikuPlugin.PanelType">
+            <summary>
+            パネル種類
+            </summary>
+        </member>
+        <member name="F:MikuMikuPlugin.PanelType.None">
+            <summary>なし</summary>
+        </member>
+        <member name="F:MikuMikuPlugin.PanelType.Base">
+            <summary>ベース</summary>
+        </member>
+        <member name="F:MikuMikuPlugin.PanelType.Brow">
+            <summary>眉</summary>
+        </member>
+        <member name="F:MikuMikuPlugin.PanelType.Eyes">
+            <summary>目</summary>
+        </member>
+        <member name="F:MikuMikuPlugin.PanelType.Mouth">
+            <summary>口</summary>
+        </member>
+        <member name="F:MikuMikuPlugin.PanelType.Etc">
+            <summary>その他</summary>
+        </member>
+        <member name="F:MikuMikuPlugin.PanelType.Bone">
+            <summary>ボーン</summary>
+        </member>
+        <member name="T:MikuMikuPlugin.MorphType">
+            <summary>
+            モーフ種類
+            </summary>
+        </member>
+        <member name="F:MikuMikuPlugin.MorphType.Group">
+            <summary>グループモーフ</summary>
+        </member>
+        <member name="F:MikuMikuPlugin.MorphType.Vertex">
+            <summary>頂点モーフ</summary>
+        </member>
+        <member name="F:MikuMikuPlugin.MorphType.Bone">
+            <summary>ボーンモーフ</summary>
+        </member>
+        <member name="F:MikuMikuPlugin.MorphType.UV">
+            <summary>UVモーフ</summary>
+        </member>
+        <member name="F:MikuMikuPlugin.MorphType.UV1">
+            <summary>UV1モーフ</summary>
+        </member>
+        <member name="F:MikuMikuPlugin.MorphType.UV2">
+            <summary>UV2モーフ</summary>
+        </member>
+        <member name="F:MikuMikuPlugin.MorphType.UV3">
+            <summary>UV3モーフ</summary>
+        </member>
+        <member name="F:MikuMikuPlugin.MorphType.UV4">
+            <summary>UV4モーフ</summary>
+        </member>
+        <member name="F:MikuMikuPlugin.MorphType.Material">
+            <summary>材質モーフ</summary>
+        </member>
+        <member name="T:MikuMikuPlugin.Bookmark">
+            <summary>
+            ブックマーク
+            </summary>
+        </member>
+        <member name="F:MikuMikuPlugin.Bookmark.FrameNumber">
+            <summary>位置</summary>
+        </member>
+        <member name="F:MikuMikuPlugin.Bookmark.Memo">
+            <summary>メモ</summary>
+        </member>
+        <member name="M:MikuMikuPlugin.Bookmark.#ctor(System.Int64,System.String)">
+            <summary>
+            コンストラクタ
+            </summary>
+            <param name="framenumber">フレーム位置</param>
+            <param name="memo">メモ</param>
+        </member>
+        <member name="T:MikuMikuPlugin.InterpolatePoint">
+            <summary>
+            補間点
+            </summary>
+        </member>
+        <member name="F:MikuMikuPlugin.InterpolatePoint.X">
+            <summary>X</summary>
+        </member>
+        <member name="F:MikuMikuPlugin.InterpolatePoint.Y">
+            <summary>Y</summary>
+        </member>
+        <member name="M:MikuMikuPlugin.InterpolatePoint.#ctor(System.Int32,System.Int32)">
+            <summary>
+            コンストラクタ
+            </summary>
+            <param name="x">X</param>
+            <param name="y">Y</param>
+        </member>
+        <member name="T:MikuMikuPlugin.MotionData">
+            <summary>
+            モーションデータ
+            </summary>
+        </member>
+        <member name="M:MikuMikuPlugin.MotionData.#ctor(DxMath.Vector3,DxMath.Quaternion)">
+            <summary>
+            コンストラクタ
+            </summary>
+            <param name="move">移動</param>
+            <param name="rotation">回転</param>
+        </member>
+        <member name="P:MikuMikuPlugin.MotionData.Move">
+            <summary>移動</summary>
+        </member>
+        <member name="P:MikuMikuPlugin.MotionData.Rotation">
+            <summary>回転</summary>
+        </member>
+        <member name="T:MikuMikuPlugin.CameraMotionData">
+            <summary>
+            カメラモーションデータ
+            </summary>
+        </member>
+        <member name="M:MikuMikuPlugin.CameraMotionData.#ctor(DxMath.Vector3,DxMath.Vector3,System.Single,System.Single)">
+            <summary>
+            コンストラクタ
+            </summary>
+            <param name="position">注視点</param>
+            <param name="angle">回転角度</param>
+            <param name="radius">距離</param>
+            <param name="fov">視野角</param>
+        </member>
+        <member name="P:MikuMikuPlugin.CameraMotionData.Position">
+            <summary>注視点位置</summary>
+        </member>
+        <member name="P:MikuMikuPlugin.CameraMotionData.Angle">
+            <summary>回転角度(ラジアン)</summary>
+        </member>
+        <member name="P:MikuMikuPlugin.CameraMotionData.Radius">
+            <summary>距離</summary>
+        </member>
+        <member name="P:MikuMikuPlugin.CameraMotionData.Fov">
+            <summary>視野角(ラジアン)</summary>
+        </member>
+        <member name="T:MikuMikuPlugin.LightMotionData">
+            <summary>
+            ライトモーションデータ
+            </summary>
+        </member>
+        <member name="M:MikuMikuPlugin.LightMotionData.#ctor(DxMath.Vector3,DxMath.Vector3)">
+            <summary>
+            コンストラクタ
+            </summary>
+        </member>
+        <member name="P:MikuMikuPlugin.LightMotionData.Position">
+            <summary>位置</summary>
+        </member>
+        <member name="P:MikuMikuPlugin.LightMotionData.Color">
+            <summary>色(RGB)</summary>
+        </member>
+        <member name="T:MikuMikuPlugin.FrameData">
+            <summary>
+            フレーム番号を持つデータ
+            </summary>
+        </member>
+        <member name="M:MikuMikuPlugin.FrameData.Clone">
+            <summary>複製する</summary>
+        </member>
+        <member name="P:MikuMikuPlugin.FrameData.FrameNumber">
+            <summary>フレーム番号</summary>
+        </member>
+        <member name="P:MikuMikuPlugin.FrameData.Selected">
+            <summary>選択フラグ</summary>
+        </member>
+        <member name="T:MikuMikuPlugin.MotionFrameData">
+            <summary>
+            モーションフレーム情報
+            </summary>
+        </member>
+        <member name="M:MikuMikuPlugin.MotionFrameData.#ctor">
+            <summary>
+            コンストラクタ
+            </summary>
+        </member>
+        <member name="M:MikuMikuPlugin.MotionFrameData.#ctor(System.Int64,DxMath.Vector3,DxMath.Quaternion)">
+            <summary>
+            コンストラクタ
+            </summary>
+        </member>
+        <member name="M:MikuMikuPlugin.MotionFrameData.Clone">
+            <summary>
+            複製を生成する
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="P:MikuMikuPlugin.MotionFrameData.Position">
+            <summary>移動</summary>
+        </member>
+        <member name="P:MikuMikuPlugin.MotionFrameData.Quaternion">
+            <summary>回転</summary>
+        </member>
+        <member name="P:MikuMikuPlugin.MotionFrameData.InterpolXA">
+            <summary>補間曲線 移動X 点A</summary>
+        </member>
+        <member name="P:MikuMikuPlugin.MotionFrameData.InterpolXB">
+            <summary>補間曲線 移動X 点B</summary>
+        </member>
+        <member name="P:MikuMikuPlugin.MotionFrameData.InterpolYA">
+            <summary>補間曲線 移動Y 点A</summary>
+        </member>
+        <member name="P:MikuMikuPlugin.MotionFrameData.InterpolYB">
+            <summary>補間曲線 移動Y 点B</summary>
+        </member>
+        <member name="P:MikuMikuPlugin.MotionFrameData.InterpolZA">
+            <summary>補間曲線 移動Z 点A</summary>
+        </member>
+        <member name="P:MikuMikuPlugin.MotionFrameData.InterpolZB">
+            <summary>補間曲線 移動Z 点B</summary>
+        </member>
+        <member name="P:MikuMikuPlugin.MotionFrameData.InterpolRA">
+            <summary>補間曲線 回転 点A</summary>
+        </member>
+        <member name="P:MikuMikuPlugin.MotionFrameData.InterpolRB">
+            <summary>補間曲線 回転 点B</summary>
+        </member>
+        <member name="T:MikuMikuPlugin.MorphFrameData">
+            <summary>
+            モーフフレームデータ
+            </summary>
+        </member>
+        <member name="M:MikuMikuPlugin.MorphFrameData.#ctor">
+            <summary>
+            コンストラクタ
+            </summary>
+        </member>
+        <member name="M:MikuMikuPlugin.MorphFrameData.#ctor(System.Int64,System.Single)">
+            <summary>
+            コンストラクタ
+            </summary>
+            <param name="_frameNumber">フレーム番号</param>
+            <param name="_weight">ウェイト</param>
+        </member>
+        <member name="M:MikuMikuPlugin.MorphFrameData.Clone">
+            <summary>
+            複製を生成する
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="P:MikuMikuPlugin.MorphFrameData.Weight">
+            <summary>ウェイト</summary>
+        </member>
+        <member name="P:MikuMikuPlugin.MorphFrameData.InterpolA">
+            <summary>補間曲線 点A</summary>
+        </member>
+        <member name="P:MikuMikuPlugin.MorphFrameData.InterpolB">
+            <summary>補間曲線 点B</summary>
+        </member>
+        <member name="T:MikuMikuPlugin.CameraFrameData">
+            <summary>
+            カメラフレーム情報
+            </summary>
+        </member>
+        <member name="M:MikuMikuPlugin.CameraFrameData.#ctor">
+            <summary>
+            コンストラクタ
+            </summary>
+        </member>
+        <member name="M:MikuMikuPlugin.CameraFrameData.#ctor(System.Int64,DxMath.Vector3,DxMath.Vector3,System.Single,System.Single)">
+            <summary>
+            コンストラクタ
+            </summary>
+            <param name="_frameNumber">フレーム番号</param>
+            <param name="_position">位置</param>
+            <param name="_angle">回転角度(ラジアン)</param>
+            <param name="_distance">距離</param>
+            <param name="_fov">視野角(ラジアン)</param>
+        </member>
+        <member name="M:MikuMikuPlugin.CameraFrameData.Clone">
+            <summary>
+            複製を生成する
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="P:MikuMikuPlugin.CameraFrameData.Position">
+            <summary>注視点位置</summary>
+        </member>
+        <member name="P:MikuMikuPlugin.CameraFrameData.Angle">
+            <summary>回転角度(ラジアン)</summary>
+        </member>
+        <member name="P:MikuMikuPlugin.CameraFrameData.Radius">
+            <summary>距離</summary>
+        </member>
+        <member name="P:MikuMikuPlugin.CameraFrameData.Fov">
+            <summary>視野角(ラジアン)</summary>
+        </member>
+        <member name="P:MikuMikuPlugin.CameraFrameData.InterpolMoveA">
+            <summary>注視点位置補間曲線 点A</summary>
+        </member>
+        <member name="P:MikuMikuPlugin.CameraFrameData.InterpolMoveB">
+            <summary>注視点位置補間曲線 点B</summary>
+        </member>
+        <member name="P:MikuMikuPlugin.CameraFrameData.InterpolRoteA">
+            <summary>回転角度補間曲線 点A</summary>
+        </member>
+        <member name="P:MikuMikuPlugin.CameraFrameData.InterpolRoteB">
+            <summary>回転角度補間曲線 点B</summary>
+        </member>
+        <member name="P:MikuMikuPlugin.CameraFrameData.InterpolDistA">
+            <summary>距離補間曲線 点A</summary>
+        </member>
+        <member name="P:MikuMikuPlugin.CameraFrameData.InterpolDistB">
+            <summary>距離補間曲線 点B</summary>
+        </member>
+        <member name="P:MikuMikuPlugin.CameraFrameData.InterpolFovA">
+            <summary>視野角補間曲線 点A</summary>
+        </member>
+        <member name="P:MikuMikuPlugin.CameraFrameData.InterpolFovB">
+            <summary>視野角補間曲線 点B</summary>
+        </member>
+        <member name="T:MikuMikuPlugin.LightFrameData">
+            <summary>
+            ライトフレーム情報
+            </summary>
+        </member>
+        <member name="M:MikuMikuPlugin.LightFrameData.#ctor">
+            <summary>
+            コンストラクタ
+            </summary>
+        </member>
+        <member name="M:MikuMikuPlugin.LightFrameData.#ctor(System.Int64,DxMath.Vector3,DxMath.Vector3)">
+            <summary>
+            コンストラクタ
+            </summary>
+            <param name="_frameNumber">フレーム番号</param>
+            <param name="_position">位置</param>
+            <param name="_color">色(RGB)</param>
+        </member>
+        <member name="M:MikuMikuPlugin.LightFrameData.Clone">
+            <summary>
+            複製を生成する
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="P:MikuMikuPlugin.LightFrameData.Position">
+            <summary>位置</summary>
+        </member>
+        <member name="P:MikuMikuPlugin.LightFrameData.Color">
+            <summary>色(RGB)</summary>
+        </member>
+        <member name="P:MikuMikuPlugin.LightFrameData.InterpolPosA">
+            <summary>位置補間曲線 点A</summary>
+        </member>
+        <member name="P:MikuMikuPlugin.LightFrameData.InterpolPosB">
+            <summary>位置補間曲線 点B</summary>
+        </member>
+        <member name="P:MikuMikuPlugin.LightFrameData.InterpolColorA">
+            <summary>色補間曲線 点A</summary>
+        </member>
+        <member name="P:MikuMikuPlugin.LightFrameData.InterpolColorB">
+            <summary>色補間曲線 点B</summary>
+        </member>
+        <member name="T:MikuMikuPlugin.SceneFrameData">
+            <summary>
+            シーンフレーム情報
+            </summary>
+        </member>
+        <member name="M:MikuMikuPlugin.SceneFrameData.#ctor">
+            <summary>
+            コンストラクタ
+            </summary>
+        </member>
+        <member name="M:MikuMikuPlugin.SceneFrameData.#ctor(System.Int64,System.Single,System.Single,DxMath.Vector3,System.Single)">
+            <summary>
+            コンストラクタ
+            </summary>
+        </member>
+        <member name="M:MikuMikuPlugin.SceneFrameData.Clone">
+            <summary>
+            複製を生成する
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="P:MikuMikuPlugin.SceneFrameData.SelfShadowDistance">
+            <summary>セルフシャドウ距離</summary>
+        </member>
+        <member name="P:MikuMikuPlugin.SceneFrameData.SelfShadowDeep">
+            <summary>セルフシャドウの濃さ</summary>
+        </member>
+        <member name="P:MikuMikuPlugin.SceneFrameData.GravityDirection">
+            <summary>重力方向</summary>
+        </member>
+        <member name="P:MikuMikuPlugin.SceneFrameData.Gravity">
+            <summary>重力の大きさ</summary>
+        </member>
+        <member name="T:MikuMikuPlugin.ModelPropertyFrameData">
+            <summary>
+            モデルプロパティ情報
+            </summary>
+        </member>
+        <member name="M:MikuMikuPlugin.ModelPropertyFrameData.#ctor(System.Int64,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Single,DxMath.Vector4)">
+            <summary>
+            コンストラクタ
+            </summary>
+        </member>
+        <member name="M:MikuMikuPlugin.ModelPropertyFrameData.Clone">
+            <summary>
+            複製を生成する
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="P:MikuMikuPlugin.ModelPropertyFrameData.Visible">
+            <summary>表示フラグ</summary>
+        </member>
+        <member name="P:MikuMikuPlugin.ModelPropertyFrameData.AddBlending">
+            <summary>加算合成フラグ</summary>
+        </member>
+        <member name="P:MikuMikuPlugin.ModelPropertyFrameData.Shadow">
+            <summary>シャドウフラグ</summary>
+        </member>
+        <member name="P:MikuMikuPlugin.ModelPropertyFrameData.Physics">
+            <summary>物理演算フラグ</summary>
+        </member>
+        <member name="P:MikuMikuPlugin.ModelPropertyFrameData.PhysicsStillMode">
+            <summary>物理演算静止フラグ</summary>
+        </member>
+        <member name="P:MikuMikuPlugin.ModelPropertyFrameData.EdgeWidth">
+            <summary>エッジの太さ</summary>
+        </member>
+        <member name="P:MikuMikuPlugin.ModelPropertyFrameData.EdgeColor">
+            <summary>エッジ色</summary>
+        </member>
+        <member name="T:MikuMikuPlugin.Caption">
+            <summary>
+            字幕
+            </summary>
+        </member>
+        <member name="M:MikuMikuPlugin.Caption.#ctor(System.Int32,System.String)">
+            <summary>
+            コンストラクタ
+            </summary>
+            <param name="id">ID</param>
+            <param name="text">テキスト</param>
+        </member>
+        <member name="M:MikuMikuPlugin.Caption.#ctor(System.String)">
+            <summary>
+            コンストラクタ
+            </summary>
+            <param name="text">テキスト</param>
+        </member>
+        <member name="M:MikuMikuPlugin.Caption.SetDefaultValues">
+            <summary>
+            初期値を設定する
+            </summary>
+        </member>
+        <member name="P:MikuMikuPlugin.Caption.Index">
+            <summary>取得時のインデックス</summary>
+        </member>
+        <member name="P:MikuMikuPlugin.Caption.StartFrame">
+            <summary>開始フレーム</summary>
+        </member>
+        <member name="P:MikuMikuPlugin.Caption.DurationFrame">
+            <summary>長さ(フレーム)</summary>
+        </member>
+        <member name="P:MikuMikuPlugin.Caption.FadeInFrame">
+            <summary>フェードインフレーム</summary>
+        </member>
+        <member name="P:MikuMikuPlugin.Caption.FadeOutFrame">
+            <summary>フェードアウトフレーム</summary>
+        </member>
+        <member name="P:MikuMikuPlugin.Caption.Location">
+            <summary>位置</summary>
+        </member>
+        <member name="P:MikuMikuPlugin.Caption.FontFamily">
+            <summary>FontFamily</summary>
+        </member>
+        <member name="P:MikuMikuPlugin.Caption.FontStyle">
+            <summary>FontStyle</summary>
+        </member>
+        <member name="P:MikuMikuPlugin.Caption.FontSize">
+            <summary>FontSize</summary>
+        </member>
+        <member name="P:MikuMikuPlugin.Caption.DrawShadow">
+            <summary>文字影</summary>
+        </member>
+        <member name="P:MikuMikuPlugin.Caption.ShadowDistance">
+            <summary>影距離</summary>
+        </member>
+        <member name="P:MikuMikuPlugin.Caption.Alpha">
+            <summary>アルファ</summary>
+        </member>
+        <member name="P:MikuMikuPlugin.Caption.LineSpace">
+            <summary>行間</summary>
+        </member>
+        <member name="P:MikuMikuPlugin.Caption.LetterSpace">
+            <summary>字間</summary>
+        </member>
+        <member name="P:MikuMikuPlugin.Caption.TextColor">
+            <summary>テキスト色</summary>
+        </member>
+        <member name="P:MikuMikuPlugin.Caption.DrawTextBorder">
+            <summary>縁取り</summary>
+        </member>
+        <member name="P:MikuMikuPlugin.Caption.TextBorderWeight">
+            <summary>縁取り太さ</summary>
+        </member>
+        <member name="P:MikuMikuPlugin.Caption.TextBorderColor">
+            <summary>縁取り色</summary>
+        </member>
+        <member name="P:MikuMikuPlugin.Caption.Rotate">
+            <summary>回転</summary>
+        </member>
+        <member name="P:MikuMikuPlugin.Caption.HorizontalAlignment">
+            <summary>水平揃え</summary>
+        </member>
+        <member name="P:MikuMikuPlugin.Caption.Text">
+            <summary>テキスト</summary>
+        </member>
+        <member name="T:MikuMikuPlugin.ICommandPlugin">
+            <summary>
+            コマンドプラグインインターフェース
+            </summary>
+        </member>
+        <member name="M:MikuMikuPlugin.ICommandPlugin.Run(MikuMikuPlugin.CommandArgs)">
+            <summary>
+            実行
+            </summary>
+        </member>
+        <member name="T:MikuMikuPlugin.Scene">
+            <summary>
+            シーン
+            </summary>
+        </member>
+        <member name="P:MikuMikuPlugin.Scene.ApplicationVersion">
+            <summary>
+            本体バージョン
+            </summary>
+        </member>
+        <member name="P:MikuMikuPlugin.Scene.KeyFramePerSec">
+            <summary>
+            KeyFPS
+            </summary>
+        </member>
+        <member name="P:MikuMikuPlugin.Scene.Language">
+            <summary>
+            Language
+            </summary>
+        </member>
+        <member name="P:MikuMikuPlugin.Scene.MarkerPosition">
+            <summary>
+            現マーカー位置
+            </summary>
+        </member>
+        <member name="P:MikuMikuPlugin.Scene.ScreenObjects">
+            <summary>
+            スクリーンオブジェクト
+            </summary>
+        </member>
+        <member name="P:MikuMikuPlugin.Scene.ActiveModel">
+            <summary>
+            アクティブモデル
+            </summary>
+        </member>
+        <member name="P:MikuMikuPlugin.Scene.ActiveAccessory">
+            <summary>
+            アクティブアクセサリ
+            </summary>
+        </member>
+        <member name="P:MikuMikuPlugin.Scene.ActiveEffect">
+            <summary>
+            アクティブエフェクト
+            </summary>
+        </member>
+        <member name="P:MikuMikuPlugin.Scene.State">
+            <summary>
+            ステート
+            </summary>
+        </member>
+        <member name="P:MikuMikuPlugin.Scene.Mode">
+            <summary>
+            モード
+            </summary>
+        </member>
+        <member name="P:MikuMikuPlugin.Scene.Accessories">
+            <summary>
+            アクセサリ
+            </summary>
+        </member>
+        <member name="P:MikuMikuPlugin.Scene.Cameras">
+            <summary>
+            カメラ
+            </summary>
+        </member>
+        <member name="P:MikuMikuPlugin.Scene.Captions">
+            <summary>
+            字幕ｓｓ
+            </summary>
+        </member>
+        <member name="P:MikuMikuPlugin.Scene.Effects">
+            <summary>
+            エフェクト
+            </summary>
+        </member>
+        <member name="P:MikuMikuPlugin.Scene.Lights">
+            <summary>
+            ライト
+            </summary>
+        </member>
+        <member name="P:MikuMikuPlugin.Scene.Models">
+            <summary>
+            モデル
+            </summary>
+        </member>
+        <member name="P:MikuMikuPlugin.Scene.PropertyFrames">
+            <summary>
+            シーンプロパティ
+            </summary>
+        </member>
+        <member name="P:MikuMikuPlugin.Scene.SelectedCaptions">
+            <summary>
+            選択中字幕
+            </summary>
+        </member>
+        <member name="P:MikuMikuPlugin.Scene.SelectedPropertyFrames">
+            <summary>
+            選択中シーンプロパティ
+            </summary>
+        </member>
+        <member name="P:MikuMikuPlugin.Scene.Bookmarks">
+            <summary>
+            ブックマーク
+            </summary>
+        </member>
+        <member name="P:MikuMikuPlugin.Scene.ScreenSize">
+            <summary>
+            スクリーンサイズ
+            </summary>
+        </member>
+        <member name="T:MikuMikuPlugin.SceneFrameCollection">
+            <summary>
+            シーンフレームコレクション
+            </summary>
+        </member>
+        <member name="M:MikuMikuPlugin.SceneFrameCollection.AddKeyFrame(MikuMikuPlugin.SceneFrameData)">
+            <summary>
+            キーフレームを追加する
+            </summary>
+            <param name="framedata">フレーム</param>
+        </member>
+        <member name="M:MikuMikuPlugin.SceneFrameCollection.AddKeyFrame(System.Collections.Generic.List{MikuMikuPlugin.SceneFrameData})">
+            <summary>
+            複数のキーフレームを追加する
+            </summary>
+            <param name="framelist">フレームリスト</param>
+        </member>
+        <member name="M:MikuMikuPlugin.SceneFrameCollection.GetEnumerator">
+            <summary>
+            Enumerator
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:MikuMikuPlugin.SceneFrameCollection.GetFrame(System.Int64)">
+            <summary>
+            指定フレームのシーンプロパティを取得する
+            </summary>
+            <param name="frameNumber">フレーム番号</param>
+            <returns></returns>
+        </member>
+        <member name="M:MikuMikuPlugin.SceneFrameCollection.GetKeyFrames">
+            <summary>
+            すべてのキーフレームについてコピーを取得する
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:MikuMikuPlugin.SceneFrameCollection.GetSelectedKeyFrames">
+            <summary>
+            選択中のキーフレームについてコピーを取得する
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:MikuMikuPlugin.SceneFrameCollection.RemoveKeyFrame(System.Int64)">
+            <summary>
+            キーフレームを削除する
+            </summary>
+            <param name="frameNumber">フレーム番号</param>
+        </member>
+        <member name="M:MikuMikuPlugin.SceneFrameCollection.ReplaceAllKeyFrames(System.Collections.Generic.List{MikuMikuPlugin.SceneFrameData})">
+            <summary>
+            すべてのキーフレームを置き換える
+            </summary>
+            <param name="framelist">フレームリスト</param>
+        </member>
+        <member name="P:MikuMikuPlugin.SceneFrameCollection.Count">
+            <summary>
+            フレーム数
+            </summary>
+        </member>
+        <member name="P:MikuMikuPlugin.SceneFrameCollection.Item(System.Int32)">
+            <summary>
+            シーンプロパティフレーム
+            </summary>
+            <param name="index">インデックス</param>
+            <returns></returns>
+        </member>
+        <member name="T:MikuMikuPlugin.SelectedSceneFrameCollection">
+            <summary>
+            選択中シーンフレームコレクション
+            </summary>
+        </member>
+        <member name="M:MikuMikuPlugin.SelectedSceneFrameCollection.GetEnumerator">
+            <summary>
+            Enumerator
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:MikuMikuPlugin.CaptionCollection">
+            <summary>
+            字幕コレクション
+            </summary>
+        </member>
+        <member name="M:MikuMikuPlugin.CaptionCollection.AddCaption(MikuMikuPlugin.Caption)">
+            <summary>
+            字幕を追加する
+            </summary>
+            <param name="caption">字幕</param>
+            <returns>追加した字幕のインデックス</returns>
+        </member>
+        <member name="M:MikuMikuPlugin.CaptionCollection.GetCaptions">
+            <summary>
+            すべての字幕についてコピーを取得する
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:MikuMikuPlugin.CaptionCollection.GetEnumerator">
+            <summary>
+            Enumerator
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:MikuMikuPlugin.CaptionCollection.GetSelectedCaptions">
+            <summary>
+            選択中の字幕についてコピーを取得する
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:MikuMikuPlugin.CaptionCollection.RemoveCaption(System.Int32)">
+            <summary>
+            字幕を削除する
+            </summary>
+            <param name="index">対象のインデックス</param>
+        </member>
+        <member name="M:MikuMikuPlugin.CaptionCollection.ReplaceAllCaptions(System.Collections.Generic.List{MikuMikuPlugin.Caption})">
+            <summary>
+            字幕をすべて置き換える
+            </summary>
+            <param name="captionlist">字幕リスト</param>
+        </member>
+        <member name="P:MikuMikuPlugin.CaptionCollection.Count">
+            <summary>
+            字幕数
+            </summary>
+        </member>
+        <member name="P:MikuMikuPlugin.CaptionCollection.Item(System.Int32)">
+            <summary>
+            字幕
+            </summary>
+            <param name="index">インデックス</param>
+            <returns></returns>
+        </member>
+        <member name="T:MikuMikuPlugin.SelectedCaptionCollection">
+            <summary>
+            選択中字幕コレクション
+            </summary>
+        </member>
+        <member name="M:MikuMikuPlugin.SelectedCaptionCollection.GetEnumerator">
+            <summary>
+            Enumerator
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:MikuMikuPlugin.AccessoryCollection">
+            <summary>
+            アクセサリコレクション
+            </summary>
+        </member>
+        <member name="M:MikuMikuPlugin.AccessoryCollection.GetEnumerator">
+            <summary>
+            Enumerator
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="P:MikuMikuPlugin.AccessoryCollection.Count">
+            <summary>
+            アクセサリ数
+            </summary>
+        </member>
+        <member name="P:MikuMikuPlugin.AccessoryCollection.Item(System.Int32)">
+            <summary>
+            アクセサリ
+            </summary>
+            <param name="index">インデックス</param>
+            <returns></returns>
+        </member>
+        <member name="T:MikuMikuPlugin.Accessory">
+            <summary>
+            アクセサリ
+            </summary>
+        </member>
+        <member name="M:MikuMikuPlugin.Accessory.AddLayer(System.String)">
+            <summary>
+            モーションレイヤを追加する
+            </summary>
+            <param name="name">表示名</param>
+            <returns></returns>
+        </member>
+        <member name="M:MikuMikuPlugin.Accessory.RemoveLayer(MikuMikuPlugin.MotionLayer)">
+            <summary>
+            モーションレイヤを削除する
+            </summary>
+            <param name="layer">対象モーションレイヤ</param>
+        </member>
+        <member name="M:MikuMikuPlugin.Accessory.RemoveLayer(System.Int32)">
+            <summary>
+            モーションレイヤを削除する
+            </summary>
+            <param name="layerID">対象モーションレイヤID</param>
+        </member>
+        <member name="P:MikuMikuPlugin.Accessory.CurrentLocalMotion">
+            <summary>
+            現在のモーション
+            </summary>
+        </member>
+        <member name="P:MikuMikuPlugin.Accessory.ID">
+            <summary>
+            ID
+            </summary>
+        </member>
+        <member name="P:MikuMikuPlugin.Accessory.GUID">
+            <summary>
+            GUID
+            </summary>
+        </member>
+        <member name="P:MikuMikuPlugin.Accessory.Layers">
+            <summary>
+            モーションレイヤ
+            </summary>
+        </member>
+        <member name="P:MikuMikuPlugin.Accessory.SelectedLayers">
+            <summary>
+            選択中のモーションレイヤ
+            </summary>
+        </member>
+        <member name="T:MikuMikuPlugin.IResidentPlugin">
+            <summary>
+            常駐型プラグインインターフェース
+            </summary>
+        </member>
+        <member name="M:MikuMikuPlugin.IResidentPlugin.Initialize">
+            <summary>
+            開始時に1回呼ばれる
+            </summary>
+        </member>
+        <member name="M:MikuMikuPlugin.IResidentPlugin.Enabled">
+            <summary>
+            有効化されたときに呼ばれる
+            </summary>
+        </member>
+        <member name="M:MikuMikuPlugin.IResidentPlugin.Disabled">
+            <summary>
+            無効化されたときに呼ばれる
+            </summary>
+        </member>
+        <member name="M:MikuMikuPlugin.IResidentPlugin.Update(System.Single,System.Single)">
+            <summary>
+            更新
+            </summary>
+        </member>
+        <member name="T:MikuMikuPlugin.BookmarkCollection">
+            <summary>
+            ブックマークコレクション
+            </summary>
+        </member>
+        <member name="M:MikuMikuPlugin.BookmarkCollection.AddBookmark(MikuMikuPlugin.Bookmark)">
+            <summary>
+            ブックマークを追加する
+            </summary>
+            <param name="bookmark">ブックマーク</param>
+        </member>
+        <member name="M:MikuMikuPlugin.BookmarkCollection.RemoveBookmark(System.Int64)">
+            <summary>
+            ブックマークを削除する
+            </summary>
+            <param name="framenumber"></param>
+        </member>
+        <member name="P:MikuMikuPlugin.BookmarkCollection.Count">
+            <summary>
+            ブックマーク数
+            </summary>
+        </member>
+        <member name="P:MikuMikuPlugin.BookmarkCollection.Item(System.Int32)">
+            <summary>
+            ブックマーク
+            </summary>
+            <param name="index">インデックス</param>
+            <returns></returns>
+        </member>
+        <member name="T:MikuMikuPlugin.IBookmark">
+            <summary>
+            ブックマーク
+            </summary>
+        </member>
+        <member name="P:MikuMikuPlugin.IBookmark.FrameNumber">
+            <summary>
+            フレーム位置
+            </summary>
+        </member>
+        <member name="P:MikuMikuPlugin.IBookmark.Memo">
+            <summary>
+            メモ
+            </summary>
+        </member>
+    </members>
+</doc>
+MZ�       ��  �       @                                   �   � �	�!�L�!This program cannot be run in DOS mode.
+$       PE  L N�P        � !  �         ��       �    @                                 @�                           l�  O    �  8                        ��                                                               H           .text   ĳ       �                    `.rsrc   8   �      �              @  @.reloc            �              @  B                ��      H     �?  �         �>  �                                           0 0     {  
+(  
+t  |  (  +
+��	-�*0 0     {  
+(  
+t  |  (  +
+��	-�*0 0     {  
+(  
+t  |  (  +
+��	-�*0 0     {  
+(  
+t  |  (  +
+��	-�*0 0     {  
+(  
+t  |  (  +
+��	-�*0 0     {  
+(  
+t  |  (  +
+��	-�*0 0     {  
+(  
+t  |  (  +
+��	-�*0 0     {  
+(  
+t  |  (  +
+��	-�*0 0     {  
+(  
+t  |  (  +
+��	-�*0 0     {  
+(  
+t  |  (  +
+��	-�*0       {  �
+-{  o  
+ *   0       {  �
+-{  o  
+ *   0       {  �
+-{  o  
+ *   0       {  �
+-{  o  
+ *   0       {  �
+-{  o  
+ *(  
+*   0 0     {  
+(  
+t
+  |  (  +
+��	-�*0 0     {  
+(  
+t
+  |  (  +
+��	-�*0      {  
++ *"}  *0      {	  
++ *"}	  *0 +      {  ��-
+s  
+
++{  o  
+
++ * 0      {
+  
++ *"}
+  *0       {  
++ *0       (  
+- }  (%    *0       (  (  s  
+
++ * 0    	   (  (  
+
++ *   0      {  
++ *"}  *0 C       }  (    s

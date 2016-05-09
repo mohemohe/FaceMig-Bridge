@@ -1,0 +1,87 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="ソース ファイル">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="ヘッダー ファイル">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="リソース ファイル">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="ソース ファイル\FaceTracker">
+      <UniqueIdentifier>{0790ab94-059f-4c21-880c-2ee4e2498e10}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\Kinoko">
+      <UniqueIdentifier>{0e221505-6fe3-4a03-939c-281a7e7d36f4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ヘッダー ファイル\Kinoko">
+      <UniqueIdentifier>{c970ae69-6599-4622-ac38-cb021f70a766}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="model">
+      <UniqueIdentifier>{645e44ec-e354-4252-834d-6b4e4eb4253e}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+    <None Include="model\face.con">
+      <Filter>model</Filter>
+    </None>
+    <None Include="model\face.tracker">
+      <Filter>model</Filter>
+    </None>
+    <None Include="model\face.tri">
+      <Filter>model</Filter>
+    </None>
+    <None Include="model\face2.tracker">
+      <Filter>model</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="DllMain.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="FaceTracker\src\lib\CLM.cc">
+      <Filter>ソース ファイル\FaceTracker</Filter>
+    </ClCompile>
+    <ClCompile Include="FaceTracker\src\lib\FCheck.cc">
+      <Filter>ソース ファイル\FaceTracker</Filter>
+    </ClCompile>
+    <ClCompile Include="FaceTracker\src\lib\FDet.cc">
+      <Filter>ソース ファイル\FaceTracker</Filter>
+    </ClCompile>
+    <ClCompile Include="FaceTracker\src\lib\IO.cc">
+      <Filter>ソース ファイル\FaceTracker</Filter>
+    </ClCompile>
+    <ClCompile Include="FaceTracker\src\lib\Patch.cc">
+      <Filter>ソース ファイル\FaceTracker</Filter>
+    </ClCompile>
+    <ClCompile Include="FaceTracker\src\lib\PAW.cc">
+      <Filter>ソース ファイル\FaceTracker</Filter>
+    </ClCompile>
+    <ClCompile Include="FaceTracker\src\lib\PDM.cc">
+      <Filter>ソース ファイル\FaceTracker</Filter>
+    </ClCompile>
+    <ClCompile Include="FaceTracker\src\lib\Tracker.cc">
+      <Filter>ソース ファイル\FaceTracker</Filter>
+    </ClCompile>
+    <ClCompile Include="Kinoko\image.cpp">
+      <Filter>ソース ファイル\Kinoko</Filter>
+    </ClCompile>
+    <ClCompile Include="Kinoko\morph.cpp">
+      <Filter>ソース ファイル\Kinoko</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Kinoko\Image.h">
+      <Filter>ヘッダー ファイル\Kinoko</Filter>
+    </ClInclude>
+    <ClInclude Include="Kinoko\morph.h">
+      <Filter>ヘッダー ファイル\Kinoko</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
