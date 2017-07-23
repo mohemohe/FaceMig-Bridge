@@ -9,4 +9,4 @@ MikuMikuMovingのプラグイン部，およびC#とC++のマネージ・アン�
 
 ### ⚠ 実際にMikuMikuMovingで動作させるには，__きのこ氏のコア部分のコード__と，__[FaceTracker](https://github.com/kylemcdonald/FaceTracker)__が必要です．
 
-![https://i.imgur.com/7dSFk9u.gifv](https://i.imgur.com/7dSFk9u.gifv)
+![https://i.imgur.com/jAj3vtW.gif](https://i.imgur.com/jAj3vtW.gif)
